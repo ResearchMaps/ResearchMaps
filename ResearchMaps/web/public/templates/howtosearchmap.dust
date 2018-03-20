@@ -1,0 +1,142 @@
+{>"htmlHeader"/}
+{>"navbar"/}
+<link rel="stylesheet" type="text/css" href="/css/stacks_page_page15.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="/js/mainNavbar"></script>
+
+		<!-- Main Content Area -->
+		<div class="row inset">
+			<div id="content" class="large-8 columns">
+				
+
+<!-- Stacks v1035 --><div id='stacks_out_107_page15' class='stacks_top'><div id='stacks_in_107_page15' class=''><div id='stacks_out_5_page15' class='stacks_out'><div id='stacks_in_5_page15' class='stacks_in stack_stack'><div id='stacks_out_7_page15' class='stacks_out'><div id='stacks_in_7_page15' class='stacks_in com_yourhead_stack_header_stack'>
+<h3>How to search the Global Map</h3>
+</div></div>
+<div id='stacks_out_9_page15' class='stacks_out'><div id='stacks_in_9_page15' class='stacks_in stack_stack'><div id='stacks_out_13_page15' class='stacks_out'><div id='stacks_in_13_page15' class='stacks_in text_stack'>
+<br />
+All of the concepts below are defined in the 
+<a href="/glossary" rel="self" title="Glossary">Glossary</a>.
+	<!--and explained in the -->
+<!--<a href="/videos" rel="self" title="Videos">Videos</a>.-->
+<br />
+<br />
+1. <strong>Go to the </strong><strong>
+<a href="/map" rel="self" title="Search Maps">Global Map</a></strong><strong> page.</strong> 
+On this page, you can derive and interact with maps from data already in the app.
+<br />
+<br />
+2. <strong>In the "What" field, enter a term you are interested in.</strong> 
+The "Where" and "When" fields are optional; if added, they will further restrict the search. 
+Please note that at the moment, the app has only a small number of articles and experiments in its database. 
+We need you to increase the size of that database. 
+You can do that by entering the experiments in the papers that are most important to you (including your own papers!).
+<br />
+<br />
+3. <strong>You can further refine your search by adding a Target; click "Search for an agent-target pair." </strong> 
+Only connections between the queried Agent and Target will be shown.
+<br />
+<br />
+4. <strong>The map can also be refined by choosing the range of scores for the connections revealed.</strong> 
+This can be done by entering numbers from 0 to 1 in the "Score Range" fields, which include a "Minimum" field and a "Maximum" field. 
+For example, entering 0.0625 in the "Minimum" field and 0.2500 in the "Maximum" field would show only the connections whose scores are between these two values. 
+With these two fields, it is possible to see the weakest (scores around 0.0625) and stronger (scores greater than 0.2500, for example) connections in the map. 
+Remember that the score of any connection ranges from 0 to 1.
+<br />
+<br />
+5. <strong>Once a map is shown in the right panel of the page, you can see the experiments in an edge of the map by clicking on the edge (including its score and arrowhead).</strong> 
+Clicking on an edge will reveal a table at the bottom of the map. 
+By clicking "View source map" in the leftmost column of the table, you will be directed to the paper where that experiment originated. 
+The terms in the heading of the table are the same terms that are used in the 
+<a href="#" data-toggle="modal" data-target="#makeMap" rel="self" title="Make a new map">Make a Map</a> page. 
+These terms are explained in the 
+<a href="/glossary" rel="self" title="Glossary">Glossary</a>. 
+<br />
+<br />
+6. <strong>By entering a number in the "Max Number of Connections" field, you can also refine the map by limiting the number of connections each query retrieves.</strong> 
+The allowable range is 1&ndash;6; the default is 2.  
+This means that, by default, any Agent or Target shown will not be separated from the Agent or Target queried by more than 2 connections. 
+However, this can be changed by entering a different number. 
+Because of the high connectivity of the Global Map, the higher the number entered, the more complex the map will be. 
+<br />
+<br />
+For more information on these subjects, you can go to the 
+<a href="/glossary" rel="self" title="Glossary">Glossary</a>. 
+	<!--and -->
+<!--<a href="/videos" rel="self" title="Videos">Videos.</a> -->
+If you find something amiss anywhere in this process, please 
+<a href="/contact" rel="self" title="Contact Us">send us a comment</a>. 
+Your ideas, requests, feedback, and comments are critical for improving this tool!
+<br />
+<br />
+<br />
+<br />
+</div></div>
+</div></div>
+</div></div>
+<div id='stacks_out_103_page15' class='stacks_out'><div id='stacks_in_103_page15' class='stacks_in stack_stack'><div id='stacks_out_114_page15' class='stacks_out'><div id='stacks_in_114_page15' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent3"><div id='stacks_out_136_page15' class='stacks_out'><div id='stacks_in_136_page15' class='stacks_in text_stack'><span id='stacks_in_137_page15'>Two additional resources to help you learn about ResearchMaps:<br /><br /></span></div></div><div id='stacks_out_121_page15' class='stacks_out'><div id='stacks_in_121_page15' class='stacks_in columns_stack'><div class='stacks_div stacks_left'>
+<div id='stacks_out_126_page15' class='stacks_out'><div id='stacks_in_126_page15' class='stacks_in image_stack'><div class='centered_image' >
+
+<a href="http://www.amazon.com/books/dp/0199731756" rel="external"><img class='imageStyle' src='images/stacks_image_127.png' width='158' height='240' alt='Stacks Image 127' /></a></div></div></div>
+</div>
+<div class='stacks_div stacks_right'>
+<div id='stacks_out_128_page15' class='stacks_out'><div id='stacks_in_128_page15' class='stacks_in image_stack'><div class='centered_image' >
+
+<a href="http://www.silvalab.com/silvapapers/S2Neuron2013.pdf" rel="external"><img class='imageStyle' src='images/stacks_image_129.png' width='202' height='264' alt='Stacks Image 129' /></a></div></div></div>
+</div></div></div><div id='stacks_out_105_page15' class='stacks_out'><div id='stacks_in_105_page15' class='stacks_in text_stack'>Need more help? 
+
+<a href="/contact" rel="self" title="Contact Us">Contact Us</a>! We would love to help!</div></div></div></div></div></div></div><div id='stacks_out_119_page15' class='stacks_out'><div id='stacks_in_119_page15' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent5"><div id='stacks_out_134_page15' class='stacks_out'><div id='stacks_in_134_page15' class='stacks_in stack_stack'><div class='slice empty out'><div class='slice empty in'></div></div></div></div></div></div></div></div></div>
+
+
+
+<!-- End of Stacks Content -->
+
+
+
+			</div>  <!-- #content -->
+
+			<aside id="sidebar" class="large-4 columns">
+				<h4 class="sidebar_title"></h4>
+				<div class="sidebar_content"></div>
+				<div id="archives">
+					
+				</div>
+			</aside>  <!-- #sidebar -->
+
+			<div class="clearer"></div>
+		</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+	<aside id="sidebar" class="large-4 columns">
+		<h4 class="sidebar_title"></h4>
+		<div class="sidebar_content"></div>
+		<div id="archives">
+					
+		</div>
+	</aside>  <!-- #sidebar -->
+
+	<div class="clearer"></div>
+</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+</html>
+{>"footer" /}

@@ -1,0 +1,133 @@
+{>"htmlHeader"/}
+{>"navbar"/}
+<link rel="stylesheet" type="text/css" href="/css/stacks_page_page4.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="/js/mainNavbar"></script>
+
+<!-- Main Content Area -->
+		<div class="row inset">
+			<div id="content" class="large-8 columns">
+				
+
+<!-- Stacks v1035 --><div id='stacks_out_107_page4' class='stacks_top'><div id='stacks_in_107_page4' class=''><div id='stacks_out_5_page4' class='stacks_out'><div id='stacks_in_5_page4' class='stacks_in stack_stack'><div id='stacks_out_7_page4' class='stacks_out'><div id='stacks_in_7_page4' class='stacks_in com_yourhead_stack_header_stack'>
+<h3 style="color: #690C15;">Newest features in ResearchMaps</h3>
+</div></div>
+<div id='stacks_out_9_page4' class='stacks_out'><div id='stacks_in_9_page4' class='stacks_in stack_stack'><div id='stacks_out_13_page4' class='stacks_out'><div id='stacks_in_13_page4' class='stacks_in text_stack'>
+<br />
+<br />
+<h4>Bayesian scoring approach</h4>
+ResearchMaps uses a new Bayesian approach to calculate the score of each empirical edge. In past versions of this app, 
+we calculated scores with a heuristic method that was designed to reflect the relative importance attributed to 
+convergent and consistent evidence. Our new Bayesian approach still faithfully captures the dynamics of our previous 
+scoring method, but the new approach is also more principled and mathematically rigorous. 
+Although you may notice small differences in the scores of your research maps, these scores will 
+behave much like the old scores did as you enter experiments into your research maps. Our new Bayesian approach will be described 
+fully in a forthcoming research article that is currently under review.
+<br />
+<br />
+<h4>Fields for statistical test and p-value</h4>
+In response to our users' requests, the form used to enter experiments now includes optional fields for the statistical test and p-value of each experiment. 
+This optional information can be useful in assessing the evidence in a research map.
+<br />
+<br />
+<h4>Highlight key edges</h4>
+To convey the gist of a research map, you can highlight its most important edges. You highlight an edge by holding the shift key and clicking 
+on the edge. A hypothetical edge can also be highlighted in case 
+the hypothesis is a central component of the work. Hypothetical edges that are highlighted still appear in a lighter color to 
+differentiate them from empirical edges.  
+<br />
+<br />
+<h4>Get relevant PubMed citations</h4>
+If you double-click on an edge in a research map, we will retrieve citations from PubMed that are relevant to the particular 
+Agent–Target relation represented by that edge. Repeating this process for multiple edges can give you a good 
+idea of the literature that is most related to the experiments you're viewing. Note that some of these searches can take a little time, so 
+wait before clicking the edge again.
+<br />
+<br />
+<h4>Search PubMed for an article</h4>
+Below the bibliographic information (title, authors, etc.) for a research map, you'll find a new link that reads, 
+&ldquo;Search PubMed for this article.&rdquo; Clicking this link will do exactly that: If you click this link while viewing 
+a public research map (i.e., one for a published article), you are likely to find the corresponding PubMed citation. If you click 
+this link while viewing a private research map, you may find related literature, depending on the title of your private map.
+<br />
+<br />
+<br />
+For more information on these subjects, you can go to the 
+<a href="/glossary" rel="self" title="Glossary">Glossary</a>. 
+	<!--and -->
+<!--<a href="/videos" rel="self" title="Videos">Videos.</a> -->
+If you find something amiss anywhere in this process, please 
+<a href="/contact" rel="self" title="Contact Us">send us a comment</a>. 
+Your ideas, requests, feedback, and comments are critical for improving this tool!
+<br />
+<br />
+<br />
+<br />
+</div></div></div></div></div></div><div id='stacks_out_103_page4' class='stacks_out'><div id='stacks_in_103_page4' class='stacks_in stack_stack'><div id='stacks_out_114_page4' class='stacks_out'><div id='stacks_in_114_page4' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent3"><div id='stacks_out_136_page4' class='stacks_out'><div id='stacks_in_136_page4' class='stacks_in text_stack'><span id='stacks_in_137_page4'>Two additional resources to help you learn about ResearchMaps:<br /><br /></span></div></div><div id='stacks_out_121_page4' class='stacks_out'><div id='stacks_in_121_page4' class='stacks_in columns_stack'><div class='stacks_div stacks_left'>
+<div id='stacks_out_126_page4' class='stacks_out'><div id='stacks_in_126_page4' class='stacks_in image_stack'><div class='centered_image' >
+
+<a href="http://www.amazon.com/books/dp/0199731756" rel="external"><img class='imageStyle' src='images/stacks_image_127.png' width='158' height='240' alt='Stacks Image 127' /></a></div></div></div>
+</div>
+<div class='stacks_div stacks_right'>
+<div id='stacks_out_128_page4' class='stacks_out'><div id='stacks_in_128_page4' class='stacks_in image_stack'><div class='centered_image' >
+
+<a href="http://www.silvalab.com/silvapapers/S2Neuron2013.pdf" rel="external"><img class='imageStyle' src='images/stacks_image_129.png' width='202' height='264' alt='Stacks Image 129' /></a></div></div></div>
+</div></div></div><div id='stacks_out_105_page4' class='stacks_out'><div id='stacks_in_105_page4' class='stacks_in text_stack'>Need more help? 
+
+<a href="/contact" rel="self" title="Contact Us">Contact Us</a>! We would love to help!</div></div></div></div></div></div></div><div id='stacks_out_119_page4' class='stacks_out'><div id='stacks_in_119_page4' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent5"><div id='stacks_out_134_page4' class='stacks_out'><div id='stacks_in_134_page4' class='stacks_in stack_stack'><div class='slice empty out'><div class='slice empty in'></div></div></div></div></div></div></div></div></div>
+
+
+
+<!-- End of Stacks Content -->
+
+
+
+			</div>  <!-- #content -->
+
+			
+<aside id="sidebar" class="large-4 columns">
+				<h4 class="sidebar_title"></h4>
+				<div class="sidebar_content"></div>
+				<div id="archives">
+					
+				</div>
+			</aside>  <!-- #sidebar -->
+
+			<div class="clearer"></div>
+		</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+	<aside id="sidebar" class="large-4 columns">
+		<h4 class="sidebar_title"></h4>
+		<div class="sidebar_content"></div>
+		<div id="archives">
+					
+		</div>
+	</aside>  <!-- #sidebar -->
+
+	<div class="clearer"></div>
+</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+</html>
+{>"footer" /}

@@ -1,0 +1,69 @@
+{>"htmlHeader"/}
+{>"navbar"/}
+<link rel="stylesheet" type="text/css" href="/css/stacks_page_page12.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="../js/mainNavbar"></script>
+		<!-- Main Content Area -->
+<div class="row inset">
+	<div id="content" class="">
+		<p style="font-size:xx-large;text-align:center;">You can watch our videos below, or find them on our <a href="https://www.youtube.com/channel/UCA8fNQJQqPsRSa5EXNtPfCg">YouTube channel</a>.</p>
+		<br>
+		<br>
+		<li>
+			<ul class="list-inline">
+				<li class="">
+					<p>General introduction to ResearchMaps</p>
+					<video src="videos/video5.mp4" controls width="320" height="240"></video>
+				</li>
+				<li class="marginLeft">
+					<p>Introduction to the principles in ResearchMaps</p>
+					<video src="videos/video1.mp4" controls width="320" height="240"></video>
+				</li>
+				<li class="marginLeft">
+					<p>Categories of experiments in ResearchMaps</p>
+					<video src="videos/video2.mp4" controls width="320" height="240"></video>
+				</li>
+			</ul>
+		</li>
+		<br>
+		<br>
+		<li>
+			<ul class="list-inline">
+				<li class="">
+					<p>Convergency and Consistency Analysis</p>
+					<video src="videos/video3.mp4" controls width="320" height="240"></video>
+				</li>
+				<li class="marginLeft">
+					<p>Using ResearchMaps: Entering experiments</p>
+					<video src="videos/video4.mp4" controls width="320" height="240"></video>
+				</li>
+				<li class="marginLeft">
+					<p>2014 lecture on Researchmaps</p>
+					<video src="videos/video6.mp4" controls width="320" height="240"></video>
+				</li>
+			</ul>
+		</li>
+	</div>
+</div>  <!-- #content -->
+
+			<aside id="sidebar" class="large-4 columns">
+				<h4 class="sidebar_title"></h4>
+				<div class="sidebar_content"></div>
+				<div id="archives">
+					
+				</div>
+			</aside>  <!-- #sidebar -->
+
+			<div class="clearer"></div>
+		</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+</html>
+{>"footer" /}

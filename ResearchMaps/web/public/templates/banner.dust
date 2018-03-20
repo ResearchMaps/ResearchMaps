@@ -1,0 +1,5 @@
+<header role="banner" id="banner" class="background1">
+    <div class="row">
+        <h2 id="site_slogan" style="display: inline-block;">A Tool for Research Planning</h2>  <!-- Site Slogan -->
+    </div>
+</header>  <!-- #banner -->

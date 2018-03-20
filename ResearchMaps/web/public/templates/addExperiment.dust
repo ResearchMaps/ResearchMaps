@@ -1,0 +1,211 @@
+{>"htmlHeader" /}
+<body>
+<div id="selectExperiments"></div>
+<div id="editExperiments"></div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="/js/mainExp"></script>
+    {>"navbar" /}
+<div class="container-fluid" id="divLocalBody">
+    <div class="row-fluid page-header">
+        <h6 id="paperOrProjectTitle" class="addMargin"> <strong>{title}</strong> </h6>
+        <div class="row-fluid">
+                <h6 class="addMargin">{authors}</h6>
+            </div>
+        <div class="row-fluid journal0">
+                <h6 class="addMargin">{journal}</h6>
+        </div>
+        <div class="row-fluid">
+            <a id="searchPubMedAnchor" style="padding-left:3px" href="http://www.ncbi.nlm.nih.gov/pubmed/">
+                <button type="button" class="btn btn-link">Search PubMed for this article</button>
+            </a>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <!--<div id="expSidebar" class="col-sm-3 fullHeight {^isOwner} hidden {/isOwner}">-->
+        <div id="expSidebar" class="col-sm-3 fullHeight">
+            <!--div class="panel panel-primary">-->
+            <div class="panel-heading">
+                <h3 class="panel-title">Add Experiment</h3>
+            </div>
+            <div class="panel-body">
+                <!-- <button type="button" id="addDesc" class="btn btn-primary">Add Description</button> -->
+                <form id="addExperiment" class="form" action="/paper/{uuid}/experiment" method="POST">
+                    <div class="alternateRow">
+                        {>"addAgent" /}
+                    </div>
+
+                    <div class="secondAgent alternateRow"></div>
+                    <br>
+                    <div class="alternateRow">
+                        <label>Target</label>
+                        <div class="form-group">
+                            <label for="WhatTarget">What</label>
+                            <div>
+                                <input id="whattarget" class="autocomplete form-control formInput" type="text" name="WhatTarget" placeholder="Required">
+                            </div>
+                        </div>
+
+                        <div class="form-group hide descOptional">
+                            <label for="WhatTargetDesc">Target What Description</label>
+                            <div>
+                                <input id="whattargetDesc" class="form-control formInput" type="text" name="WhatTargetDesc" placeholder="Required">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="WhereTarget">Where</label>
+                            <div>
+                                <input id="wheretarget" class="form-control formInput" type="text" name="WhereTarget" placeholder="Required">
+                            </div>
+                        </div>
+
+                        <div class="form-group hide descOptional">
+                            <label for="WhereTargetDesc">Target Where Description</label>
+                            <div>
+                                <input id="wheretargetDesc" class="form-control formInput" type="text" name="wheretargetDesc" placeholder="Required">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="WhenTarget">When</label>
+                            <div>
+                                <input id="whentarget" class="form-control formInput" type="text" name="WhenTarget" placeholder="Required">
+                            </div>
+                        </div>
+
+                        <div class="form-group hide descOptional">
+                            <label for="WhenTargetDesc">Target When Description</label>
+                            <div>
+                                <input id="whentargetDesc" class="form-control formInput" type="text" name="whentargetDesc" placeholder="Required">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Result">Result</label>
+                            <div class="Result">
+                                <label class="radio-inline"><input type="radio" name="Result" value="Increase"> &#8593;</label>
+                                <label class="radio-inline"><input type="radio" name="Result" value="Decrease"> &#8595;</label>
+                                <label class="radio-inline"><input type="radio" name="Result" value="No Change"> No Change</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group hide descOptional">
+                            <label for="resultDesc">Result Description</label>
+                            <div>
+                                <input id="resultDesc" class="form-control formInput" type="text" name="resultDesc" placeholder="Required">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="TargetApproach">Target Approach</label>
+                            <div>
+                                <input id="TargetApproach" type="text" class="form-control formInput" name="TargetApproach" placeholder="Required">
+                            </div>
+                            <input id="_csrf" type="hidden" name="_csrf" value="{_csrf}">
+                        </div>
+                    </div>
+                    <p><a href="#" id="addAgent">Add second Agent for double-intervention experiment</a></p>
+
+                    <input type="submit" id='submit' class="btn btn-primary" name="submit"/>
+                    <button type="button" id="clear" class="btn btn-default">Clear</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9 fullHeight">
+        <div class="panel panel-default">
+            <div id="notAuthorizedError" class="alert alert-danger alert-dismissable hidden">
+                <button type="button" data-hide="alert" class="close" aria-hidden="true">&times;</button>
+                <strong>Error!</strong> You are not authorized to modify the contents of this paper. Contact us for further information.
+            </div>
+            <div class="panel-body scroll">
+                <div id="svg">
+                    {svg}
+                </div>
+                <div id="experimentsDiv"></div>
+                <div id="experiments" class="hide">
+                    {>"experiments" /}
+                </div>
+            </div>
+            <div id="missingValuesError" class="alert alert-danger alert-dismissable hidden">
+                <button type="button" data-hide="alert" class="close" aria-hidden="true">&times;</button>
+                <strong>Error!</strong> Some values are missing. Enter all values before submitting the form.
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Change label</h4>
+      </div>
+      <div class="modal-body">
+      <ul>
+        <li><label for="mod_what">What:</label><input type="text" id="mod_what" /><input type="hidden" id="mod_what_prev" /></li>
+        <li><label for="mod_where">Where:</label><input type="text" id="mod_where" /><input type="hidden" id="mod_where_prev" /></li>
+        <li><label for="mod_when">When:</label><input type="text" id="mod_when" /><input type="hidden" id="mod_when_prev" /></li>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Pubmed Information</h4>
+      </div>
+      <div class="modal-body">
+        <div id="divWait" class="hidden">
+        </div>
+        <table>
+            <tr>
+                <td id="tdFirst"></td>
+                <td id="tdSecond"></td>
+            </tr>
+        </table>
+        <div id="modalDivInfo">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="_divHack" style="display:none">
+    {resultsStr}
+</div>
+<script>
+    Maps.local(function() {
+        var addExperimentViewModel = new Maps.AddExperimentViewModel();
+        var hackTypesetSuperscripts = new Maps.Hacks.typesetSuperscripts();
+        var hrefString = $('#paperOrProjectTitle').text().trim().replace(/\s/g, '+');
+        $('#searchPubMedAnchor')[0].href = 'http://www.ncbi.nlm.nih.gov/pubmed/?term=' + hrefString;
+        $('#btnSearch').click(function() {
+            return Maps.Hacks.pubmedSearch_clicked();
+        });
+        Maps.Hacks.setVars();
+    });
+
+    $(".panel-primary").children().click(function() {
+        $('#banner').slideUp(700);
+        $('#content_divider_line').slideUp(700);
+    });
+    $(".panel-default").children().click(function() {
+        $('#banner').slideUp(700);
+        $('#content_divider_line').slideUp(700);
+    });
+
+    Maps.Hacks.loadPubmed();
+</script>
+</body>
+</html>

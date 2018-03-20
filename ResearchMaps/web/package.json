@@ -1,0 +1,30 @@
+{
+  "name": "ResearchMaps",
+  "description": "Research Maps App",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "supervisor -x node-debug index.js"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "async": "latest",
+    "consolidate": "latest",
+    "excel": "latest",
+    "graphviz": "latest",
+    "xml2js": "latest",
+    "neo4j": "~1.0",
+    "dust": "0.3.0",
+    "dustjs-linkedin": "1.2",
+    "dustjs-helpers": "1.1.1",
+    "node-uuid": "latest",
+    "nodemailer": "*",
+    "supervisor": "*",
+    "xoauth2": "*",
+    "nodemailer-mailgun-transport": "*",
+    "emailjs": "*",
+    "request": "*",
+    "lodash": "~4.14.0",
+    "boom": "~3.2.2"
+  }
+}

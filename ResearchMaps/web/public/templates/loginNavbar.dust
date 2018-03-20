@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/consolidated-all.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/consolidated-screen.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="/js/mainNavbar"></script>
+
+<style type="text/css">
+.background1 {background-image: url(/images/background1.jpg);}
+						/* Handles the @font-face declarations here so that FireFox properly accesses the font files. */
+						@font-face {
+								font-family: 'FontAwesome';
+								font-weight: normal;
+								font-style: normal;
+						}
+
+</style>
+
+
+
+<!-- Navigation Bar -->
+<!-- BEGIN INJECTION -->
+<header id="title_nav_section">
+	<div class="row">
+		<div class="large-12 columns">
+		</div>
+	</div>
+</header><!-- #title_nav_section -->
+
+{>"banner"/}
+
+				<!-- Page Icon and Divider -->
+<div id="content_divider_line">
+</div>
+
+<div id="forgot" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="forgot" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">Forgot Password</h3>
+			</div>
+			<div class="modal-body">
+				<p>Enter your username to reset the password</p>
+				<form>
+					<div class="controls controls-row">
+						<input id="forgotUsername" name="name" type="text" class="span3 form-control" placeholder="Name" />
+					</div>
+ 
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="forgotPassword" href="#" class="btn btn-primary">Submit</button>
+				<button type="button" href="#" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- END INJECTION -->
+<!--
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">Research Maps</a>
+	</div>
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+	  <ul class="nav navbar-nav">
+		<li class="map"><a href="/map" data-toggle="modal"><i class="fa fa-map-marker"></i> Make Map</a></li>
+		<li class="articles"><a href="/myArticles" data-toggle="modal"><i class="fa fa-book"></i>Search Maps</a></li>
+		<li class="divider-vertical"></li>
+		<li class="terms"><a href="#terms" data-toggle="modal"><i class="fa fa-list-ul"></i>My Terms</a></li>
+		<li class="divider-vertical"></li>
+		<li class="divider-vertical"></li>
+		<li><a href="#contact" data-toggle="modal"><i class="fa fa-envelope"></i> Contact Us</a></li>
+		<li class="divider-vertical"></li>
+		<li><a href="/logout" data-toggle="modal"><i class="fa fa-power-off"></i> Logout</a></li>
+		<li class="divider-vertical"></li>
+	  </ul>
+	</div>
+  </div>
+</nav>
+-->

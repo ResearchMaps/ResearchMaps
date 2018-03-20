@@ -1,0 +1,20 @@
+<div class="optional form-controls">
+	<label for="location">Brain location of the studies</label>
+	<div>
+		<input type="text" name="location" id="location">
+	</div>
+</div>
+
+<div class="optional form-group">
+	<label for="devStage">Developmental stage of the studies</label>
+	<div>
+		<input type="text" name="devStage" id="devStage">
+	</div>
+</div>
+
+<div class="optional form-group">
+	<label for="other">Other info</label>
+	<div>
+		<input type="text" name="other" id="other">
+	</div>
+</div>

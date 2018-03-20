@@ -1,0 +1,52 @@
+
+#stacks_in_93_page12 {
+	border: solid #FFFFFF;
+	border-width: 0px 0px 0px 49px;
+}
+
+#stacks_in_33_page12 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_33_page12 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_33_page12 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_out_47_page12 {
+	width: 250px;
+	float: left;
+}
+
+#stacks_out_66_page12 {
+	width: 250px;
+	float: left;
+}
+
+#stacks_out_54_page12 {
+	width: 250px;
+	float: left;
+}
+
+#stacks_in_99_page12 {
+	font-size: 158%;
+}
+
+#stacks_in_100_page12 .stacks_left {
+	float:left;
+	width:49%;
+}
+
+#stacks_in_100_page12 .stacks_right {
+	float:right;
+	width:49%;
+}
+#stacks_out_125_page12 {
+	width: 480px;
+}

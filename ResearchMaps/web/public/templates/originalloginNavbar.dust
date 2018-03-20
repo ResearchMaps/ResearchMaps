@@ -1,0 +1,82 @@
+<!-- Navigation Bar -->
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Research Maps</a>
+		</div>
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/login" data-toggle="modal"><i class="fa fa-sign-in"></i> Login</a></li>
+				<li><a href="/forgotpassword" data-toggle="modal"><i class="fa fa-user"></i> Forgot Password</a></li>
+				<li><a href="/signup" data-toggle="modal"><i class="fa fa-edit"></i> Sign Up</a></li>
+				<li><a href="/contact" data-toggle="modal"><i class="fa fa-envelope"></i> Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Navigation Ends -->
+<!-- Forgot Password Model Box -->
+<div id="forgot" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="forgot" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">Forgot Password</h3>
+			</div>
+			<div class="modal-body">
+				<p>Enter your username to reset the password</p>
+				<form>
+					<div class="controls controls-row">
+						<input id="forgotUsername" name="name" type="text" class="span3 form-control" placeholder="Name" />
+					</div>
+ 
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="forgotPassword" href="#" class="btn btn-primary">Submit</button>
+				<button type="button" href="#" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+<!-- Contact Us Model Box -->
+<div id="contact" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3 class="modal-title">Contact Us</h3>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="controls controls-row">
+						<input id="name" name="name" class="form-control" type="text" class="span3" placeholder="Name" />
+					</div>
+					<br>
+					<div class="controls controls-row">
+						<input id="email" name="email" class="form-control" type="email" class="span3" placeholder="Email address" />
+					</div>
+					<br>
+					<div class="controls">
+						<textarea id="message" name="message" class="form-control span5" placeholder="Your Message" rows="5"></textarea>
+					</div>
+ 
+				</form>
+			</div>
+ 
+			<div class="modal-footer">
+				<a href="#" class="btn btn-primary">Submit</a>
+				<a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+			</div>
+		</div>
+	</div>
+</div>

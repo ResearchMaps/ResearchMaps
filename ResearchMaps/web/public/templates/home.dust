@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+{>"htmlHeader"/}
+
+<!-- CSS reset -->
+<link rel="stylesheet" type="text/css" media="screen" href="/css/consolidated-screen-0.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/consolidated-all-0.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="/js/mainNavbar"></script>
+
+
+<style type="text/css">
+
+	.background1 { background-image: url(images/background1.jpg); }
+	@font-face {
+		font-family: 'FontAwesome';
+		font-weight: normal;
+		font-style: normal;
+	}
+
+</style>
+
+<!-- Plugins insert their additional code here -->
+<link rel='stylesheet' type='text/css' media='all' href='/css/stacks.css' />
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="/css/stacks_ie.css" />
+<![endif]-->
+
+<link rel='stylesheet' type='text/css' media='all' href='css/stacks_page_page0.css' />
+<script type='text/javascript' charset='utf-8' src='js/stacks_page_page0.js'></script>
+
+</head>
+
+<body>
+
+<!-- Title and Desktop Navigation Section -->
+<header id="title_nav_section">
+  <div class="row">
+	<div class="large-12 columns">
+	  <div id="logo"><a href="/"><img src="/images/pinabc.jpg" width="256" height="365" alt="Site logo"/></a></div>   <!-- Site Logo -->
+		<a href="/" id="title_link"><h1 id="site_title">ResearchMaps</h1></a>   <!-- Site Title -->
+		<div id="navigation_wrapper">
+
+<!-- HEADER HERE -->
+<!-- Drop Down Desktop Navigation -->
+			</div>
+		</div>
+	</div>
+</header>  <!-- #title_nav_section -->
+
+
+{>"banner"/}
+
+		<!-- ExtraContent Area One -->
+		<div class="ec_wrapper" id="extraContent1">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer1"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ExtraContent Area Two -->
+		<div class="ec_wrapper" id="extraContent2">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer2"></div>
+				</div>
+			</div>
+		</div>
+
+<!-- Page Icon and Divider -->
+<div id="content_divider_line">
+</div>
+
+
+<!-- Main Content Area -->
+		<div class="row inset">
+			<div id="content" class="large-8 columns">
+
+
+<!-- Stacks v1035 --><div id='stacks_out_107_page0' class='stacks_top'><div id='stacks_in_107_page0' class=''><div id='stacks_out_110_page0' class='stacks_out'><div id='stacks_in_110_page0' class='stacks_in three_columns_stack'><div class='stacks_div stacks_left'>
+<div class='slice empty out'><div class='slice empty in'></div></div>
+</div>
+<div class='stacks_div stacks_right'>
+<div class='slice empty out'><div class='slice empty in'></div></div>
+</div>
+<div class='stacks_div stacks_middle'>
+<div class='slice empty out'><div class='slice empty in'></div></div>
+</div></div></div><div id='stacks_out_1_page0' class='stacks_out'><div id='stacks_in_1_page0' class='stacks_in three_columns_stack'><div class='stacks_div stacks_left'>
+<div id='stacks_out_27_page0' class='stacks_out'><div id='stacks_in_27_page0' class='stacks_in com_yourhead_stack_header_stack'><h3>Simplify </h3></div></div><div id='stacks_out_19_page0' class='stacks_out'><div id='stacks_in_19_page0' class='stacks_in float_left_stack'><div class='stacks_div stacks_float_left'>
+<div class='centered_image' ><img class='imageStyle' src='images/stacks_image_20.jpg' width='128' height='140' alt='Stacks Image 20' /></div>
+</div>
+Scientists are expected to keep track of an ever-increasing volume and complexity of experiments and findings. 
+ResearchMaps helps to integrate and summarize large amounts of causal information into a searchable graphic format!
+<br />
+</div>
+</div>
+</div>
+<div class='stacks_div stacks_right'>
+<div id='stacks_out_51_page0' class='stacks_out'><div id='stacks_in_51_page0' class='stacks_in com_yourhead_stack_header_stack'><h3>Easy</h3></div></div><div id='stacks_out_48_page0' class='stacks_out'><div id='stacks_in_48_page0' class='stacks_in float_left_stack'><div class='stacks_div stacks_float_left'>
+<div class='centered_image' ><video src="videos/video5.mp4" controls width="156" height="132"></video></div>
+</div>
+ It is easy to use ResearchMaps and  our video tutorials provide step-by-step examples to get you started!  ResearchMaps is a UCLA-based service, free for all members of academic and not-for-profit institutions. </div></div>
+</div>
+<div class='stacks_div stacks_middle'>
+<div id='stacks_out_29_page0' class='stacks_out'><div id='stacks_in_29_page0' class='stacks_in com_yourhead_stack_header_stack'><h3>Plan</h3></div></div><div id='stacks_out_22_page0' class='stacks_out'><div id='stacks_in_22_page0' class='stacks_in float_left_stack'><div class='stacks_div stacks_float_left'>
+<div class='centered_image' ><img class='imageStyle' src='images/stacks_image_23.png' width='160' height='132' alt='Stacks Image 23' /></div>
+</div>
+The interactive features of ResearchMaps facilitate planning when writing grants, research papers, and reviews. ResearchMaps is also useful as a collaborative tool and as a catalyst for the creative process in science.</div></div>
+</div></div></div><div id='stacks_out_37_page0' class='stacks_out'><div id='stacks_in_37_page0' class='stacks_in stack_stack'><div id='stacks_out_41_page0' class='stacks_out'><div id='stacks_in_41_page0' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent5"><div id='stacks_out_55_page0' class='stacks_out'><div id='stacks_in_55_page0' class='stacks_in three_columns_stack'><div class='stacks_div stacks_left'>
+<div id='stacks_out_59_page0' class='stacks_out'><div id='stacks_in_59_page0' class='stacks_in com_yourhead_stack_button_stack'><div id='stacks_in_59_page0_button'><a href="/login" rel="self" title="Sign In">Log In   </a></div></div></div>
+</div>
+<div class='stacks_div stacks_right'>
+<div id='stacks_out_63_page0' class='stacks_out'><div id='stacks_in_63_page0' class='stacks_in com_yourhead_stack_button_stack'><div id='stacks_in_63_page0_button'>
+<a href="#" onclick="Maps.modal('forgot')" data-toggle="modal" data-target="#sforgot" rel="self" title="Click here if you forgot your password">Password?</a></div></div></div>
+</div>
+<div class='stacks_div stacks_middle'>
+<div id='stacks_out_61_page0' class='stacks_out'><div id='stacks_in_61_page0' class='stacks_in com_yourhead_stack_button_stack'><div id='stacks_in_61_page0_button'><a href="/signup" rel="self" title="Request account">Register! It is Free!</a></div></div></div>
+</div></div></div></div></div></div></div></div></div></div>
+
+<div id="forgot" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="forgot" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">Forgot Password</h3>
+			</div>
+			<div class="modal-body">
+				<p>Enter your username to reset the password</p>
+				<form>
+					<div class="controls controls-row">
+						<input id="forgotUsername" name="name" type="text" class="span3 form-control" placeholder="Name" />
+					</div>
+ 
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" id="forgotPassword" href="#" class="btn btn-primary">Submit</button>
+				<button type="button" href="#" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End of Stacks Content -->
+
+
+
+	</div>  <!-- #content -->
+
+	<aside id="sidebar" class="large-4 columns">
+		<h4 class="sidebar_title"></h4>
+		<div class="sidebar_content"></div>
+		<div id="archives">
+
+		</div>
+	</aside>  <!-- #sidebar -->
+
+	<div class="clearer"></div>
+</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+            Maps.Login(function(){
+                var login = new Maps.Login();
+            });
+        </script>
+</body>
+
+</html>
+{>"footer" /}

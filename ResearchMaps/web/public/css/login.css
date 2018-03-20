@@ -1,0 +1,12 @@
+body{
+	/*background: url('../images/background.png');
+	background-size: cover;*/
+}
+.login{padding-top: 6%;}
+.center{float: none; margin-left: auto; margin-right: auto;}
+.test{
+	background-color: transparent; 
+	border-style: solid; 
+	border-width: 0px 0px 1px 0px; 
+	border-color: #D3D3D3;
+}

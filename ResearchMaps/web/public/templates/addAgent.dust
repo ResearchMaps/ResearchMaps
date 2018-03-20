@@ -1,0 +1,55 @@
+<label title="In experiments testing an A -> B connection, A is the Agent and B is the Target; For example, experiments that change A (the Agent) would be expected to consequently change B (the Target).">Agent</label>
+<div class="form-group">
+	<label for="WhatAgent" title="This designation helps to define an entity (Agent or Target). For example, the name of a gene (e.g., CREB1) or protein (e.g., alphaCaMKII), physiology (e.g., long-term potentiation), behavior (e.g., spatial learning), etc. This information must be filled in since it is critical to define the entity being mapped.">What</label>
+	<div>
+		<input id="whatagent" class="autocomplete form-control formInput" type="text" name="WhatAgent" placeholder="Required" value="{WhatAgent}">
+	</div>
+</div>
+<div class="form-group hide descOptional">
+	<label for="WhatAgentDesc">What Description</label>
+	<div>
+		<input id="whatagentDesc" class="form-control formInput optional" type="text" name="WhatAgentDesc" placeholder="Required" value="{WhatAgentDesc}">
+	</div>
+</div>
+<div class="form-group">
+	<label for="WhereAgent" title="Specifies the location of an entity relative to appropriate landmarks. This could be a cell type, a brain region, etc. This information must be filled in since this is critical to define the entity being mapped.">Where</label>
+	<div>
+		<input id="whereagent" class="form-control formInput" type="text" name="WhereAgent" placeholder="Required" value="{WhereAgent}">
+	</div>
+</div>
+<div class="form-group hide descOptional">
+	<label for="WhereAgentDesc">Where Description</label>
+	<div>
+		<input id="whereagentDesc" class="form-control formInput optional" type="text" name="WhereAgentDesc" placeholder="Required" value="{WhereAgentDesc}">
+	</div>
+</div>
+<div class="form-group">
+	<label for="WhenAgent" title="Defines a timeline relevant to the properties of a given entity, such as the developmental stage in which an entity was studied (e.g., post-natal day 2, 18 months old mouse, etc.). This information must be filled in since this is critical to define the entity being mapped.">When</label>
+	<div>
+		<input id="whenagent" class="form-control formInput" type="text" name="WhenAgent" placeholder="Required" value="{WhenAgent}">
+	</div>
+</div>
+<div class="form-group hide descOptional">
+	<label for="WhenAgentDesc">When Description</label>
+	<div>
+		<input id="whenagentDesc" class="form-control formInput optional" type="text" name="WhenAgentDesc" placeholder="Required" value="{WhenAgentDesc}">
+	</div>
+</div>
+<div class="form-group">
+	<label for="Manipulation" title="Defines the type of experiment being mapped. In a positive manipulation (designated by an upward arrow), the levels/probability of the Agent are increased. In a negative manipulation (designated by a downward arrow), the levels/probability of the Agent are decreased. In a Non-Intervention (designated by a crossed over zero) the agent is not manipulated, and the experiment is focused on tracking the covariance of the agent and target. The observed change in the Agent can be either positive (designated by a crossed-over zero and an upward arrow) or negative (designated by a crossed-over zero and an downward arrow). This information must be filled in since this is critical to define the entity being mapped.">Experiment</label>
+	<div>
+		<ul class="list-inline" id="ulManipulations">
+			<li><label class="radio"><input type="radio" name="Manipulation" value="Positive"> &uarr;</label></li>
+			<li><label class="radio"><input type="radio" name="Manipulation" value="Negative"> &darr;</label></li>
+			<li><label class="radio"><input type="radio" name="Manipulation" value="NIP"> &empty;<sup>&uarr;</sup></label></li>
+			<li><label class="radio"><input type="radio" name="Manipulation" value="NIN"> &empty;<sup>&darr;</sup></label></li>
+		</ul>
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="AgentApproach" title="This field is for recording information concerning how the Agent was manipulated or tracked. For example, a viral shRNA approach used to knock down a gene in specific cell type. This information must be filled in since this is critical to define the entity being mapped.">Agent Approach</label>
+	<div>
+		<input type="text" id="AgentApproach" class="form-control formInput" name="AgentApproach" placeholder="Required" value="{AgentApproach}">
+	</div>
+</div>

@@ -1,0 +1,38 @@
+{>"htmlHeader" /}
+<body>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="/js/mainAdmin"></script>
+	{>"navbar" /}
+	<div class="container">
+		<div class="page-header padTop">
+			<h3 class=""> <strong>Users</strong> </h3>
+		</div>
+		<div class="row">
+			<table class="table table-striped">
+				<thead>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Institution</th>
+					<th>Email</th>
+					<th>Status</th>
+					<th>Approve/Disapprove</th>
+				</thead>
+				{#results}
+				<tr class="user">
+					<td>{firstName}</td>
+					<td>{lastName}</td>
+					<td>{institution}</td>
+					<td>{username}</td>
+					<td>{status}</td>
+					<td> 
+						{?boolStatus} <img class="disapprove" src="/images/wrong.png" height="20" width="20"/>
+						{:else} <img class="approve" src="/images/check.png" height="20" width="20"/> 
+						{/boolStatus}
+					</td>
+				</tr>
+				{/results}
+			</table>
+			<input id="csrf" type="hidden" value="{_csrf}"/>
+		</div>
+	</div>
+</body>
+</html>

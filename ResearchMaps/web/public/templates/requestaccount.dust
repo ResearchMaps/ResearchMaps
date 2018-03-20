@@ -1,0 +1,83 @@
+{>"htmlHeader"/}
+{>"navbar"/}
+
+		<!-- Main Content Area -->
+		<div class="row inset">
+			<div id="content" class="large-8 columns">
+				
+<div class="message-text"></div><br />
+
+<p>Fill in the form below to request a ResearchMaps account.</p>
+
+<p>Currently, ResearchMaps is available only to members of academic institutions and other not-for-profit research organizations. <span style="font-weight:bold;">Please sign up to ResearchMaps with your institution’s email address.</span></p>
+
+<form action="/signup" method="post" enctype="multipart/form-data">
+	<div id="notAuthorizedError" class="alert alert-danger alert-dismissable {?hidden}hide{/hidden}">
+		<button type="button" data-dismiss="alert" class="close" aria-hidden="true">&times;</button>
+		<strong>Error!</strong> Wrong Captcha
+	</div>
+
+	 <div>
+		<label>First Name:</label> *<br />
+		<input class="form-input-field" type="text" name="firstName" value="{firstName}" size="40" required="required" /><br /><br />
+
+		<label>Last Name:</label> *<br />
+		<input class="form-input-field" type="text" name="lastName" value="{lastName}" size="40" required="required" /><br /><br />
+
+		<label>INSTITUTION Email:</label> *<br />
+		<input class="form-input-field" type="text" name="email" value="{email}" size="40" required="required" /><br /><br />
+
+		<label>Field of Study:</label> *<br />
+		<input class="form-input-field" type="text" name="fieldOfStudy" value="{fieldOfStudy}" size="40" required="required" /><br /><br />
+
+		<label>Department:</label> *<br />
+		<input class="form-input-field" type="text" name="department" value="{department}" size="40" required="required" /><br /><br />
+
+		<label>Institution:</label> *<br />
+		<input class="form-input-field" type="text" name="institution" value="{institution}" size="40" required="required" /><br /><br />
+
+		<label>Country:</label> *<br />
+		<input class="form-input-field" type="text" name="country" value="{country}" size="40" required="required" /><br /><br />
+
+		<label>Message (optional):</label> <br />
+		<textarea class="form-input-field" name="message" rows="8" cols="38"></textarea><br /><br />
+
+		<img src="/captcha.jpg"/><br /><br />
+		
+		<label for="digits">Enter Captcha</label><br />
+		<input type="text" id="digits" class="form-input-field" name="digits" required="required" /><br /><br /><!-- placeholder="Enter Captcha"-->
+		<input type="hidden" name="_csrf" value="{_csrf}"/>
+		<input class="form-input-button" type="reset" value="Reset" />
+		<input class="form-input-button" type="submit" value="Submit" />
+	</div>
+</form>
+
+<br />
+<div class="form-footer"></div><br />
+
+			</div>  <!-- #content -->
+
+			<aside id="sidebar" class="large-4 columns">
+				<h4 class="sidebar_title"></h4>
+				<div class="sidebar_content"></div>
+				<div id="archives">
+					
+				</div>
+			</aside>  <!-- #sidebar -->
+
+			<div class="clearer"></div>
+		</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.js"></script>
+</body>
+
+</html>
+{>"footer" /}

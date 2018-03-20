@@ -1,0 +1,69 @@
+<table class="table table-striped">
+	<thead>
+		<th class="hide">ID</th>
+		<th class="actions">Actions</th>
+		<!-- <th class="paper">Paper</th> -->
+		<th title="This designation helps to define an entity (Agent or Target). For example, the name of a gene (e.g., CREB1) or protein (e.g., alphaCaMKII), physiology (e.g., long-term potentiation), behavior (e.g., spatial learning), etc. This information must be filled in since it is critical to define the entity being mapped.">What Agent</th>
+		<th title="Specifies the location of an entity relative to appropriate landmarks. This could be a cell type, a brain region, etc. This information must be filled in since this is critical to define the entity being mapped.">Where Agent</th>
+		<th title="Defines a timeline relevant to the properties of a given entity, such as the developmental stage in which an entity was studied (e.g., post-natal day 2, 18 months old mouse, etc.). This information must be filled in since this is critical to define the entity being mapped.">When Agent</th>
+		<th title="Defines the type of experiment being mapped. In a positive manipulation (designated by an upward arrow), the levels/probability of the Agent are increased. In a negative manipulation (designated by a downward arrow), the levels/probability of the Agent are decreased. In a Non-Intervention (designated by a crossed over zero) the agent is not manipulated, and the experiment is focused on tracking the covariance of the agent and target. The observed change in the Agent can be either positive (designated by a crossed-over zero and an upward arrow) or negative (designated by a crossed-over zero and an downward arrow). This information must be filled in since this is critical to define the entity being mapped.">Experiment</th>
+		<th title="This field is for recording information concerning how the Agent was manipulated or tracked. For example, a viral shRNA approach used to knock down a gene in specific cell type. This information must be filled in since this is critical to define the entity being mapped.">Agent Approach</th>
+		<th title="In experiments testing an A -> B connection, A is the Agent and B is the Target; For example, experiments that change A (the Agent) would be expected to consequently change B (the Target).">What Target</th>
+		<th title="Specifies the location of an entity relative to appropriate landmarks. This could be a cell type, a brain region, etc. This information must be filled in since this is critical to define the entity being mapped.">Where Target</th>
+		<th title="Defines a timeline relevant to the properties of a given entity, such as the developmental stage in which an entity was studied (e.g., post-natal day 2, 18 months old mouse, etc.). This information must be filled in since this is critical to define the entity being mapped.">When Target</th>
+		<th title="This field is used to record the change in the Target recorded during the experiment. An upward arrow is used to record increases in the Target, a downwards arrow records decreases and “No Change” is chosen when the target does not change during the experiment. For double-intervention experiments, the Results field has two additional choices: if the result of the double manipulation experiment is more pronounced than the change in the single manipulation experiment, than the user should choose either the double up (increases in the target) or down (decreases in the target) arrows. This information must be filled in since this is critical to define the entity being mapped.">Result</th>
+		<th>Target Approach</th>
+		<th title="Connects two different entities in the map. An edge can represent an excitatory connection (e.g., more of A leads to more of B; sharp arrow), inhibitory connection (e.g., more of A leads to less of B; blunt arrow) or no connection at all (more of A leads to no change in B; dashed line). Right clicking on the any edge allows the users to Edit (useful to correct wrong entries), Duplicate (useful when entering a series of related experiments) or Delete experiments entered by the user.">Connection Type</th>
+		<th title="This designation helps to define an entity (Agent or Target). For example, the name of a gene (e.g., CREB1) or protein (e.g., alphaCaMKII), physiology (e.g., long-term potentiation), behavior (e.g., spatial learning), etc. This information must be filled in since it is critical to define the entity being mapped.">What Second Agent</th>
+		<th title="Specifies the location of an entity relative to appropriate landmarks. This could be a cell type, a brain region, etc. This information must be filled in since this is critical to define the entity being mapped.">Where Second Agent</th>
+		<th title="Defines a timeline relevant to the properties of a given entity, such as the developmental stage in which an entity was studied (e.g., post-natal day 2, 18 months old mouse, etc.). This information must be filled in since this is critical to define the entity being mapped.">When Second Agent</th>
+		<th title="Defines the type of experiment being mapped. In a positive manipulation (designated by an upward arrow), the levels/probability of the Agent are increased. In a negative manipulation (designated by a downward arrow), the levels/probability of the Agent are decreased. In a Non-Intervention (designated by a crossed over zero) the agent is not manipulated, and the experiment is focused on tracking the covariance of the agent and target. The observed change in the Agent can be either positive (designated by a crossed-over zero and an upward arrow) or negative (designated by a crossed-over zero and an downward arrow). This information must be filled in since this is critical to define the entity being mapped.">Second Agent Manipulation</th>
+		<th title="This field is for recording information concerning how the Agent was manipulated or tracked. For example, a viral shRNA approach used to knock down a gene in specific cell type. This information must be filled in since this is critical to define the entity being mapped.">Second Agent Approach</th>
+	</thead>
+	<tbody>
+		{#results}
+			<tr>
+			<td class="hide uuid">{uuid}</td>
+			<td class="actions">
+				<ul class="list-unstyled">
+					<li>
+						<a href="#" class="duplicateExp">Duplicate</a>
+					</li>
+					<li>
+						<a href="#" class="editExp">Edit</a>
+					</li>
+					<li>
+						<a href="#" class="deleteExp">Delete</a>
+					</li>
+				</ul>
+			</td>
+			<!-- <td class="paper"><a href="/paper/{uuid}/experiment/all">Click to get paper</a></td> -->
+			<td>{WhatAgent}</td>
+			<td>{WhereAgent}</td>
+			<td>{WhenAgent}</td>
+			<td>{Manipulation}</td>
+			<td>{AgentApproach}</td>
+			<td>{WhatTarget}</td>
+			<td>{WhereTarget}</td>
+			<td>{WhenTarget}</td>
+			<td>{Result}</td>
+			<td>{TargetApproach}</td>
+			<td>{conclusion}</td>
+			<td>{WhatSecondAgent}</td>
+			<td>{WhereSecondAgent}</td>
+			<td>{WhenSecondAgent}</td>
+			<td>{SecondManipulation}</td>
+			<td>{SecondAgentApproach}</td>
+			</tr>
+		{/results}
+	</tbody>
+</table>
+<script>
+    Maps.local(function() {
+        $(".table .actions .duplicateExp").click(function() {
+            var widget = new Maps.Widgets();
+            var alert = widget.alert("Experiment has been populated");
+            $(".row-fluid.page-header.padTop").first().prepend(alert);
+        });
+    });
+</script>

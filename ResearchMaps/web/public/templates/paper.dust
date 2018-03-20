@@ -1,0 +1,61 @@
+{>"htmlHeader" /}
+<body>
+	{>"navbar" /}
+	<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="../js/mainPaper"></script>
+	<div class="container padTop page-header">
+		<div class="row">
+			<div id="error" class="alert alert-danger alert-dismissable hidden">
+				<button type="button" data-hide="alert" class="close" aria-hidden="true">&times;</button>
+				<strong>Error!</strong>
+				<p class="errorText"></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<h4>Search for an article. Click on an article to see its map.</h4>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+				<input id="searchForArticle" type="text" class="form-control" placeholder="Enter article title">
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+				<span class="input-group-btn">
+					<button id="search" class="btn btn-primary" type="button">Search</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<ul class="list-unstyled">
+			{#papers}
+  			<li>
+  			    <a class="paper" href="/paper/{uri}/experiment/all">{title}</a>
+  			    {#authors}
+  			        <br>
+  			        {authors}
+  			    {/authors}
+  			    {#journal}
+  			        <br>
+  			        {journal}
+  			    {/journal}
+                {#isAdmin}
+                    {#private}
+                        <a style="" class="lnk-button space-left" data-mod="private">make private</a>
+                    {/private}
+  			    {/isAdmin}
+  			    {#private}
+                    <a style="display:none" class="lnk-button space-left" data-mod="delete">delete</a>
+                {/private}
+            </li>{~n}<br>
+ 			{/papers}
+ 		</ul>
+	</div>
+	<script type="text/javascript">
+        Maps.local(function(){
+            var paperViewModel = new Maps.PaperViewModel();
+        });
+    </script>
+	</body>
+</html>
+{>"footer" /}

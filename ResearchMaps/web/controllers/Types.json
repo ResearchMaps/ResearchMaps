@@ -1,0 +1,29 @@
+{
+	"node":{
+		"TERM":"NeurolaxTerm",
+		"USER":"User",
+		"PAPER":"Paper",
+		"EXPERIMENT":"Experiment"
+	},
+	"rel":{
+		"description":{
+			"ADDS":"User adds paper",
+			"ADDEDBY":"Paper added by User",
+			"CONSISTSOF":"Paper consists of experiments",
+			"PARTOF":"Experiment is part of a paper",
+			"AGENT":"Expeiment has an agent",
+			"TARGET":"Experiment has a target",
+			"USEDIN":"Agent/target is involved in an experiment",
+			"GIVES":"Agent gives target"
+		},
+		"ADDS":"adds",
+		"ADDEDBY":"addedBy",
+		"CONSISTSOF":"consistsOf",
+		"PARTOF":"partOf",
+		"AGENT":"agent",
+		"TARGET":"target",
+		"USEDIN":"usedIn",
+		"GIVES":"gives"
+	}
+
+}

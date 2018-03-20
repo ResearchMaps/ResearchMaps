@@ -1,0 +1,86 @@
+<div id="experiment" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3 class="modal-title">Select Experiment</h3>
+			</div>
+			<div class="modal-body scroll">
+				<table class="table table-striped">
+					<thead>
+						<th class="hide">ID</th>
+						<th>Actions</th>
+						<th>What Agent</th>
+						<th>Where Agent</th>
+						<th>When Agent</th>
+						<th>Experiment</th>
+						<th>Agent Approach</th>
+						<th>What Target</th>
+						<th>Where Target</th>
+						<th>When Target</th>
+						<th>Result</th>
+						<th>Target Approach</th>
+						<th>Connection Type</th>
+						<th>What Second Agent</th>
+						<th>Where Second Agent</th>
+						<th>When Second Agent</th>
+						<th>Second Agent Manipulation</th>
+						<th>Second Agent Approach</th>
+						<th>Statistical Test</th>
+						<th>p-value</th>
+						<th>Fold Change</th>
+					</thead>
+					<tbody>
+						{#results}
+							<tr>
+								<td class="hide uuid">{uuid}</td>
+
+								<td class="actions">
+									<ul class="list-unstyled">
+										<li>
+											<a href="#" class="duplicateExp">Duplicate</a>
+										</li>
+										<li>
+											<a href="#" class="editExp">Edit</a>
+										</li>
+										<li>
+											<a href="#" class="deleteExp">Delete</a>
+										</li>
+									</ul>
+								</td>
+								<td>{WhatAgent}</td>
+								<td>{WhereAgent}</td>
+								<td>{WhenAgent}</td>
+								<td>{Manipulation}</td>
+								<td>{AgentApproach}</td>
+								<td>{WhatTarget}</td>
+								<td>{WhereTarget}</td>
+								<td>{WhenTarget}</td>
+								<td>{Result}</td>
+								<td>{TargetApproach}</td>
+								<td>{conclusion}</td>
+								<td>{WhatSecondAgent}</td>
+								<td>{WhereSecondAgent}</td>
+								<td>{WhenSecondAgent}</td>
+								<td>{SecondAgentManipulation}</td>
+								<td>{SecondAgentApproach}</td>
+								<td>{StatTest}</td>
+								<td>{pvalue}</td>
+								<td>{foldChange}</td>
+							</tr>
+						{/results}
+					</tbody>
+				</table>
+			</div>
+			<div class="modal-footer">
+				<!-- <button id="{button}" class="btn btn-primary">Submit</button> -->
+				<button class="btn" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    Maps.local(function() {
+		var experimentModalViewModel = new Maps.ExperimentModalViewModel();
+    });
+</script>

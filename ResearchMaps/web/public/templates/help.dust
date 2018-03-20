@@ -1,0 +1,65 @@
+{>"htmlHeader"/}
+{>"navbar"/}
+<link rel="stylesheet" type="text/css" href="/css/stacks_page_page1.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="../js/mainNavbar"></script>
+<!-- Main Content Area -->
+<div class="row inset">
+	<div id="content" class="large-8 columns">
+				
+
+<!-- Stacks v1035 --><div id='stacks_out_107_page1' class='stacks_top'><div id='stacks_in_107_page1' class=''><div id='stacks_out_5_page1' class='stacks_out'><div id='stacks_in_5_page1' class='stacks_in stack_stack'><div id='stacks_out_9_page1' class='stacks_out'><div id='stacks_in_9_page1' class='stacks_in stack_stack'><div id='stacks_out_13_page1' class='stacks_out'><div id='stacks_in_13_page1' class='stacks_in text_stack'>
+
+<a href="/howtomakemap" rel="self" title="How to make a map">How to make a map</a><br />
+
+<a href="/howtosearchmap" rel="self" title="How to search the Global Map">How to search the Global Map</a><br />
+
+<a href="/glossary" rel="self" title="Glossary">Glossary</a><br />
+
+<a href="/newestfeatures" rel="self" title="Newest features">Newest features</a><br />
+
+<!--<a href="/videos" rel="self" title="Videos">Videos</a><br />-->
+
+<a href="/contact" rel="self" title="Contact Us">Contact us</a><br />
+
+<a href="/contact" rel="self" title="Contact Us">Report bugs</a><br /><br /><br /></div></div></div></div></div></div><div id='stacks_out_103_page1' class='stacks_out'><div id='stacks_in_103_page1' class='stacks_in stack_stack'><div id='stacks_out_114_page1' class='stacks_out'><div id='stacks_in_114_page1' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent3"><div id='stacks_out_136_page1' class='stacks_out'><div id='stacks_in_136_page1' class='stacks_in text_stack'><span id='stacks_in_137_page1'>Two additional resources to help you learn about ResearchMaps:<br /><br /></span></div></div><div id='stacks_out_121_page1' class='stacks_out'><div id='stacks_in_121_page1' class='stacks_in columns_stack'><div class='stacks_div stacks_left'>
+<div id='stacks_out_126_page1' class='stacks_out'><div id='stacks_in_126_page1' class='stacks_in image_stack'><div class='centered_image' >
+
+<a href="http://www.amazon.com/books/dp/0199731756" rel="external"><img class='imageStyle' src='images/stacks_image_127.png' width='158' height='240' alt='Stacks Image 127' /></a></div></div></div>
+</div>
+<div class='stacks_div stacks_right'>
+<div id='stacks_out_128_page1' class='stacks_out'><div id='stacks_in_128_page1' class='stacks_in image_stack'><div class='centered_image' >
+
+<a href="http://www.silvalab.com/silvapapers/S2Neuron2013.pdf" rel="external"><img class='imageStyle' src='images/stacks_image_129.png' width='202' height='264' alt='Stacks Image 129' /></a></div></div></div>
+</div></div></div><div id='stacks_out_105_page1' class='stacks_out'><div id='stacks_in_105_page1' class='stacks_in text_stack'>Need more help? <a href="contact" rel="self" title="Contact Us">Contact Us</a>! We would love to help!</div></div></div></div></div></div></div><div id='stacks_out_119_page1' class='stacks_out'><div id='stacks_in_119_page1' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent5"><div id='stacks_out_134_page1' class='stacks_out'><div id='stacks_in_134_page1' class='stacks_in stack_stack'><div class='slice empty out'><div class='slice empty in'></div></div></div></div></div></div></div></div></div>
+
+
+
+<!-- End of Stacks Content -->
+
+
+
+			</div>  <!-- #content -->
+
+			<aside id="sidebar" class="large-4 columns">
+				<h4 class="sidebar_title"></h4>
+				<div class="sidebar_content"></div>
+				<div id="archives">
+					
+				</div>
+			</aside>  <!-- #sidebar -->
+
+			<div class="clearer"></div>
+		</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+
+</html>
+{>"footer" /}

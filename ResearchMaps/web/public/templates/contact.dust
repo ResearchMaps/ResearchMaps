@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{>"htmlHeader"/}
+{>"navbar"/}
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="/js/mainNavbar"></script>
+<link rel="stylesheet" type="text/css" href="/css/stacks_page_page2.css" />
+
+		<!-- Main Content Area -->
+		<div class="row inset">
+			<div id="content" class="large-8 columns">
+				
+<div class="message-text"></div><br />
+
+<form action="/contact" method="post" enctype="multipart/form-data">
+	 <div>
+		<label>Your Name:</label> *<br />
+		<input class="form-input-field" type="text" value="" name="name" size="40"/><br /><br />
+
+		<label>Your Email:</label> *<br />
+		<input class="form-input-field" type="text" value="" name="email" size="40"/><br /><br />
+
+		<label>Message:</label> *<br />
+		<textarea class="form-input-field" name="content" rows="8" cols="38"></textarea><br /><br />
+
+		<div style="display: none;">
+			<label>Spam Protection: Please don't fill this in:</label>
+			<textarea name="comment" rows="1" cols="1"></textarea>
+		</div>
+		<input type="hidden" name="_csrf" value="{_csrf}">
+		<input class="form-input-button" type="reset" value="Reset" />
+		<input class="form-input-button" type="submit" value="Submit" />
+	</div>
+</form>
+
+
+<br />
+<div class="form-footer"><?php echo $_SESSION['formFooter']; unset($_SESSION['formFooter']); ?></div><br />
+
+<?php unset($_SESSION['form']); ?>
+			</div>  <!-- #content -->
+
+			<aside id="sidebar" class="large-4 columns">
+				<h4 class="sidebar_title"></h4>
+				<div class="sidebar_content"></div>
+				<div id="archives">
+					
+				</div>
+			</aside>  <!-- #sidebar -->
+
+			<div class="clearer"></div>
+		</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+
+	<aside id="sidebar" class="large-4 columns">
+		<h4 class="sidebar_title"></h4>
+		<div class="sidebar_content"></div>
+		<div id="archives">
+					
+		</div>
+	</aside>  <!-- #sidebar -->
+
+	<div class="clearer"></div>
+</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+</html>
+{>"footer" /}

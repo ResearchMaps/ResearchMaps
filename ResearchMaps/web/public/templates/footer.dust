@@ -1,0 +1,60 @@
+	<aside id="sidebar" class="large-4 columns">
+		<h4 class="sidebar_title"></h4>
+		<div class="sidebar_content"></div>
+		<div id="archives">
+					
+		</div>
+	</aside>  <!-- #sidebar -->
+
+	<div class="clearer"></div>
+</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer and ExtraContent Area Four -->
+		<footer id="footer" role="footer">
+			<!-- ExtraContent Area Four -->
+			<div class="ec_wrapper" id="extraContent4">
+				<div class="row inset">
+					<div class="large-12 columns">
+						<div id="extraContainer4"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Breadcrumb Trail -->
+			<div id="breadcrumb">
+				<div class="row">
+					<div id="breadcrumb_content" class="large-12 columns">
+						
+					</div>
+				</div>
+			</div>  <!-- #breadcrumb -->
+
+<!-- Copyright and social networking badges. -->
+	<div id="copyright">
+		<div class="row">
+			<div class="large-12 columns">
+				<div id="social_badges"></div>
+				&copy; 2014 silvalab  |  ResearchMaps works best with Chrome  |  <a href="#" id="rw_email_contact">Contact us</a><script type="text/javascript">var _rwObsfuscatedHref0 = "mai";var _rwObsfuscatedHref1 = "lto";var _rwObsfuscatedHref2 = ":si";var _rwObsfuscatedHref3 = "lva";var _rwObsfuscatedHref4 = "a@m";var _rwObsfuscatedHref5 = "edn";var _rwObsfuscatedHref6 = "et.";var _rwObsfuscatedHref7 = "ucl";var _rwObsfuscatedHref8 = "a.e";var _rwObsfuscatedHref9 = "du";var _rwObsfuscatedHref = _rwObsfuscatedHref0+_rwObsfuscatedHref1+_rwObsfuscatedHref2+_rwObsfuscatedHref3+_rwObsfuscatedHref4+_rwObsfuscatedHref5+_rwObsfuscatedHref6+_rwObsfuscatedHref7+_rwObsfuscatedHref8+_rwObsfuscatedHref9; document.getElementById('rw_email_contact').href = _rwObsfuscatedHref;</script>  |  <a href="/newestfeatures">Newest features</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+<div id="to_the_top">
+	 <i class="fa fa-2x fa-arrow-circle-up"></i>
+</div>
+
+</body>
+
+</html>

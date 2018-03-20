@@ -1,0 +1,245 @@
+{>"htmlHeader"/}
+{>"navbar"/}
+<link rel="stylesheet" type="text/css" href="/css/stacks_page_page2.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="../js/mainNavbar"></script>
+<!-- Main Content Area -->
+		<div class="row inset">
+			<div id="content" class="large-8 columns">
+				
+
+<!-- Stacks v1035 --><div id='stacks_out_107_page2' class='stacks_top'><div id='stacks_in_107_page2' class=''><div id='stacks_out_17_page2' class='stacks_out'><div id='stacks_in_17_page2' class='stacks_in stack_stack'><div id='stacks_out_85_page2' class='stacks_out'><div id='stacks_in_85_page2' class='stacks_in com_yourhead_stack_header_stack'>
+<h3>Glossary</h3>
+</div></div>
+<div id='stacks_out_83_page2' class='stacks_out'>
+<div id='stacks_in_83_page2' class='stacks_in text_stack'>
+<br />
+<br />
+<h5 style="color:#FE2D59;">List of Maps</h5>
+This page lists all of the public articles and their maps, as well as the current user's private maps. 
+By clicking one of these entries, the user is directed to the associated map. 
+Some maps may be incomplete. 
+By default, users can edit only the maps of articles that they entered; however, they can request authorization to edit 
+any of the maps that someone else entered. To request authorization, just use the 
+<a href="/contact" rel="self" title="Contact Us">Contact Us</a> form.
+<br />
+<br />
+<br />
+<h5 style="color:#FE2D59;">Make a Map</h5>
+This is the page where experiments are entered to be mapped. 
+The first step of this process is to choose one of two forms for starting a map: 
+a) "Search PubMed and create an entry" or b) "Create a Private Entry." 
+With the "Search PubMed and create an entry" option, any article you enter must have a PubMed ID, and the map that you 
+create for this article will be shared with other users. 
+With the "Create a Private Entry" option, you can create a map of either published or unpublished experiments, 
+and your map will not be shared with other users.
+<br />
+<br />
+<ul class="disc">
+<li><strong>Agent</strong>: In experiments testing an A → B connection, A is the Agent and B is the Target. 
+For example, experiments that change A (the Agent) would be expected to consequently change B (the Target).
+</li>
+</ul>
+<ul class="disc">
+<li><strong>Agent Approach</strong>: In this field, record how the Agent was manipulated or tracked &mdash; 
+for example, a viral shRNA approach used to knock down a gene in specific cell type. 
+You must enter this information since this is critical to define the entity being mapped.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Create a Private Entry </strong>(data not shared with other users): 
+This mode is for entering experiments that are not in PubMed (for example, experiments in ongoing projects). 
+These maps and experiments <em>will not</em> be shared with other users.
+</li>
+</ul>
+<ul class="disc">
+<li><strong>Edge</strong>: As the connection between two different entities in the map, an edge can represent 
+an excitatory connection (e.g., more of A leads to more of B &mdash; represented by a sharp arrowhead), 
+an inhibitory connection (e.g., more of A leads to less of B &mdash; represented by a blunt arrow) or 
+no connection at all (more of A leads to no change in B &mdash; represented by a dashed line). 
+Right-clicking on an edge (including its score and arrowhead) allows the user to 
+"Edit" (useful for correcting wrong entries), 
+"Duplicate" (useful for entering a series of related experiments), or 
+"Delete" experiments.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Manipulation:</strong> Defines the type of experiment being mapped. 
+In a Positive manipulation (denoted by ↑), the levels/probability of the Agent are increased. 
+In a Negative manipulation (denoted by ↓), the levels/probability of the Agent are decreased. 
+In a Non-Intervention (denoted by ∅<sup>↑</sup> or ∅<sup>↓</sup>), the Agent is not manipulated, and the experiment tracks 
+the covariance of the Agent and Target. 
+In a Non-Intervention, the observed change in the Agent can be either positive (denoted by ∅<sup>↑</sup>) or 
+negative (denoted by ∅<sup>↓</sup>). 
+You must enter this information since this is critical to define the entity being mapped.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Multi-Agent Experiments</strong> 
+In this type of experiment, there are at least two simultaneous manipulations of two separate Agents, and the effects 
+on a common Target are measured.
+The goal of these experiments is to test whether one of the Agents mediated the 
+effects between the other Agent and the Target in an A → B → C configuration, where A and B are the two manipulated 
+Agents and C is the Target. 
+Currently, the app can accommodate no more than two Agents in a single experiment.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Result:</strong> In this field, record how the Target changed during the experiment — 
+either "Increase (+)," "No Change (0)," or "Decrease (&minus;)."  
+For double-intervention experiments, the Results field has two additional choices: if the change observed in the 
+double-manipulation experiment is larger in magnitude than the change observed in the single-manipulation experiment, 
+the user should choose either the double-up arrows (↑↑) for increases in the Target, or 
+double-down arrows (↓↓) for decreases in the Target. 
+You must enter this information since this is critical to define the entity being mapped.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Search PubMed and create an entry</strong> (data shared with other users): 
+This mode for making maps connects users to PubMed (Library of Medicine), and allows them to enter 
+keywords to search for a published paper. An effective way to find a paper that was previously 
+identified in PubMed is to simply enter the PubMed ID (e.g., 24431436) into the query box. 
+Maps created in this mode will automatically be shared with other users.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Submit</strong>: 
+When the user clicks this button, the experiment that has been described in the form is added to the map of the paper. 
+Experiments entered in the "Search PubMed and create an entry" mode will be shared with other users. 
+However, experiments entered in the "Create a Private Entry" mode <em>will not</em> be shared with other users.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Scores (or Weights)</strong> of an edge: 
+The score (or weight) of an edge is shown above the edge, and reflects the amount of evidence supporting the connection 
+represented in that edge. 
+Scores range from 0 to 1.  
+The higher the score, the greater and more consistent the evidence for that connection.  
+As experiments are entered, a Bayesian method is used to update the belief attributed to each type of relation. 
+The precise algorithm by which we calculate the scores will be given in a publication that is currently in submission.  
+<!-- For a more complete description of the calculation performed to calculate the weight of an edge click here. -->
+</li>
+</ul>
+<ul class="disc">
+<li><strong>Target</strong>: In experiments testing an A → B connection, A is the Agent and B is the Target. 
+For example, experiments that change A (the Agent) would be expected to consequently change B (the Target).
+</li>
+</ul>
+<ul class="disc">
+<li><strong>Target Approach</strong>: In this field, record how the Target's change (or lack thereof) was measured. 
+You must enter this information since this is critical to define the entity being mapped.
+</li>
+</ul>
+<ul class="disc">
+<li><strong>What</strong>: 
+This field helps to define an entity (Agent or Target) &mdash; 
+for example, the name of a gene (e.g., CREB1) or protein (e.g., alphaCaMKII), 
+physiology (e.g., long-term potentiation), behavior (e.g., spatial learning), etc. 
+You must enter this information since this is critical to define the entity being mapped.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>When:</strong>  
+This field defines a timeline relevant to the properties of a given entity, such as the developmental stage in which 
+an entity was studied (e.g., post-natal day 2, 18 months old mouse, etc.). 
+You must enter this information since this is critical to define the entity being mapped.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Where</strong>: 
+This field specifies the location of an entity relative to appropriate landmarks. 
+This could be a cell type, a brain region, etc. 
+You must enter this information since this is critical to define the entity being mapped.
+</li>
+</ul>
+<br />
+<h5 style="color:#FE2D59;">Global Map</h5> 
+On this page, the user enters queries to search all of the integrated data in the app, and to derive maps from 
+those queries. 
+Clicking on any edge (including its score and arrowhead) in the resulting maps will reveal a table with the experiments represented in 
+the corresponding edge. 
+Clicking the "View source map" link next to any one experiment in the table will direct the user to the paper 
+where that experiment originated.
+<br />
+<br />
+<ul class="disc">
+<li>
+<strong>Max Number of Connections</strong>: 
+This field in the Global Map page can be used to specify the number of connections the app retrieves with each query. 
+The allowable range is 1&ndash;6; the default is 2. This means that any entity shown in the map will not be 
+separated from the entity queried by more than 2 connections. 
+However, this parameter can be changed by entering a different number. 
+Because of the high connectivity of the Global Map, the higher the number entered, the more complex the map will be.
+</li>
+</ul>
+<ul class="disc">
+<li>
+<strong>Score Range</strong>: 
+This field in the Global Map page can be used for visualizing only the connections in the database whose scores fall in  
+a specified range. 
+The "Score Range" field includes both a "Minimum" field and a "Maximum" field;  
+both fields accept a number between 0 and 1. 
+For example, entering 0.25 in the Minimum field and 0.50 in the Maximum field would show only the connections whose 
+scores are between these two values.
+</li>
+</ul>
+<br />
+<br />
+</div>
+</div>
+</div>
+</div>
+<div id='stacks_out_68_page2' class='stacks_out'><div id='stacks_in_68_page2' class='stacks_in stack_stack'><div id='stacks_out_70_page2' class='stacks_out'><div id='stacks_in_70_page2' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent3"><div id='stacks_out_72_page2' class='stacks_out'><div id='stacks_in_72_page2' class='stacks_in text_stack'>
+<span id='stacks_in_73_page2'>Two additional resources to help you learn about ResearchMaps:
+<br />
+<br />
+</span>
+</div></div><div id='stacks_out_74_page2' class='stacks_out'><div id='stacks_in_74_page2' class='stacks_in columns_stack'><div class='stacks_div stacks_left'>
+<div id='stacks_out_76_page2' class='stacks_out'><div id='stacks_in_76_page2' class='stacks_in image_stack'><div class='centered_image' ><a href="http://www.amazon.com/books/dp/0199731756" rel="external"><img class='imageStyle' src='images/stacks_image_77.png' width='158' height='240' alt='Stacks Image 77' /></a></div></div></div>
+</div>
+<div class='stacks_div stacks_right'>
+<div id='stacks_out_79_page2' class='stacks_out'><div id='stacks_in_79_page2' class='stacks_in image_stack'><div class='centered_image' ><a href="http://www.silvalab.com/silvapapers/S2Neuron2013.pdf" rel="external"><img class='imageStyle' src='images/stacks_image_87.png' width='202' height='264' alt='Stacks Image 87' /></a></div></div></div>
+</div></div></div><div id='stacks_out_88_page2' class='stacks_out'><div id='stacks_in_88_page2' class='stacks_in text_stack'>
+Need more help? <a href="/contact" rel="self" title="Contact Us">Contact Us</a>! We would love to help!
+</div></div></div></div></div></div></div></div></div>
+
+
+
+<!-- End of Stacks Content -->
+
+
+
+			</div>  <!-- #content -->
+
+			<aside id="sidebar" class="large-4 columns">
+				<h4 class="sidebar_title"></h4>
+				<div class="sidebar_content"></div>
+				<div id="archives">
+					
+				</div>
+			</aside>  <!-- #sidebar -->
+
+			<div class="clearer"></div>
+		</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+</html>
+{>"footer" /}

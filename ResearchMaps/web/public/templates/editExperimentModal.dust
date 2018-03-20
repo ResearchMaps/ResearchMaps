@@ -1,0 +1,177 @@
+<div id="eExperiment" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3 class="modal-title">Edit Experiment</h3>
+			</div>
+			<div class="modal-body scroll">
+			    <div class="form-group">
+                    <ul class="list-inline">
+                        <li><label class="radio"><input id="empirical" type="radio" name="empiricalHypothetical" checked="checked"> Empirical </label></li>
+                        <li><label class="radio"><input id="hypothetical" type="radio" name="empiricalHypothetical" data-hyp="true"> Hypothetical </label></li>
+                    </ul>
+                </div>
+				<label>Agent</label>
+				<div class="form-group">
+					<label for="WhatAgent">What</label>
+					<div>
+						<input id="eWhatagent" class="autocomplete form-control formInput" type="text" name="WhatAgent" placeholder="Required" value="{WhatAgent}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="WhereAgent">Where</label>
+					<div>
+						<input id="eWhereagent" class="form-control optional formInput" type="text" name="WhereAgent" placeholder="Required" value="{WhereAgent}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="WhenAgent">When</label>
+					<div>
+						<input id="eWhenagent" class="form-control optional formInput" type="text" name="WhenAgent" placeholder="Required" value="{WhenAgent}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="Manipulation">Manipulation</label>
+					<div>
+						<ul class="list-inline">
+							<li><label class="radio"><input type="radio" name="Manipulation" value="Positive"> &uarr;</label></li>
+							<li><label class="radio"><input type="radio" name="Manipulation" value="Negative"> &darr;</label></li>
+							<li><label class="radio"><input type="radio" name="Manipulation" value="NIP"> &empty;<sup>&uarr;</sup></label></li>
+							<li><label class="radio"><input type="radio" name="Manipulation" value="NIN"> &empty;<sup>&darr;</sup></label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="AgentApproach">Agent Approach</label>
+					<div>
+						<input type="text" id="eAgentApproach" class="form-control formInput" name="AgentApproach" placeholder="Required" value="{AgentApproach}">
+					</div>
+				</div>
+				<div class="eSecondAgent hide">
+					<label>Second Agent</label>
+					<div class="form-group">
+						<label for="WhatSecondAgent">What</label>
+						<div>
+							<input id="whatesecondAgent" class="autocomplete form-control formInput" type="text" name="WhatSecondAgent" placeholder="Required" value="{WhatSecondAgent}">
+						</div>
+					</div>
+					<div class="form-group hide descOptional">
+						<label for="WhatSecondAgentDesc">What Description</label>
+						<div>
+							<input id="whatesecondAgentDesc" class="form-control formInput" type="text" name="WhatSecondAgentDesc" placeholder="Required" value="{WhatSecondAgentDesc}">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="WhereSecondAgent">Where</label>
+						<div>
+							<input id="whereesecondAgent" class="form-control formInput" type="text" name="WhereSecondAgent" placeholder="Required" value="{WhereSecondAgent}">
+						</div>
+					</div>
+					<div class="form-group hide descOptional">
+						<label for="WhereSecondAgentDesc">Where Description</label>
+						<div>
+							<input id="whereesecondAgentDesc" class="form-control formInput" type="text" name="WhereSecondAgentDesc" placeholder="Required" value="{WhereSecondAgentDesc}">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="WhenSecondAgent">When</label>
+						<div>
+							<input id="whenesecondAgent" class="form-control formInput" type="text" name="WhenSecondAgent" placeholder="Required" value="{WhenSecondAgent}">
+						</div>
+					</div>
+					<div class="form-group hide descOptional">
+						<label for="WhenSecondAgentDesc">When Description</label>
+						<div>
+							<input id="whenesecondAgentDesc" class="form-control formInput" type="text" name="WhenSecondAgentDesc" placeholder="Required" value="{WhenSecondAgentDesc}">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="eSecondManipulation">Second Manipulation</label>
+						<div>
+							<ul class="list-inline">
+								<li><label class="radio"><input type="radio" name="eSecondManipulation" value="Positive"> &#8593;</label></li>
+								<li><label class="radio"><input type="radio" name="eSecondManipulation" value="Negative"> &#8595;</label></li>
+								<!-- <li><label class="radio"><input type="radio" name="eSecondManipulation" value="NIP"> &#8709;&#8593;</label></li> -->
+								<!-- <li><label class="radio"><input type="radio" name="eSecondManipulation" value="NIN"> &#8709;&#8595;</label></li> -->
+							</ul>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="SecondAgentApproach">Second Agent Approach</label>
+						<div>
+							<input type="text" id="eSecondAgentApproach" class="form-control formInput" name="SecondAgentApproach" placeholder="Required" value="{SecondAgentApproach}">
+						</div>
+					</div>
+				</div>
+				<label>Target</label>
+				<div class="form-group">
+					<label for="WhatTarget">What</label>
+					<div>
+						<input id="eWhattarget" class="autocomplete form-control formInput" type="text" name="WhatTarget" placeholder="Required" value="{WhatTarget}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="WhereTarget">Where</label>
+					<div>
+						<input id="eWheretarget" class="form-control optional formInput" type="text" name="WhereTarget" placeholder="Required" value="{WhereTarget}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="WhenTarget">When</label>
+					<div>
+						<input id="eWhentarget" class="form-control optional formInput" type="text" name="WhenTarget" placeholder="Required" value="{WhenTarget}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="Result">Result</label>
+					<div class="Result">
+						<label class="radio-inline"><input type="radio" name="Result" value="Increase"> Increase (+)</label><br>
+						<label class="radio-inline"><input type="radio" name="Result" value="No Change"> No Change (0)</label><br>
+						<label class="radio-inline"><input type="radio" name="Result" value="Decrease"> Decrease (&minus;)</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="TargetApproach">Target Approach</label>
+					<div>
+						<input id="eTargetApproach" type="text" class="form-control formInput" name="TargetApproach" placeholder="Required" value="{TargetApproach}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="StatTest">Statistical Test</label>
+					<div>
+						<input id="eStatTest" class="form-control formInput" type="text" name="StatTest" placeholder="Optional" value="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pvalue">p-value</label>
+					<div>
+						<input id="epvalue" class="form-control formInput" type="text" name="pvalue" placeholder="Optional" value="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="foldChange">Fold Change</label>
+					<div>
+						<input id="efoldChange" class="form-control formInput" type="text" name="foldChange" placeholder="Optional" value="">
+					</div>
+				</div>
+				<p><a href="#" id="eAddAgent">Add second Agent for double-intervention experiment</a></p>
+			</div>
+			<div class="modal-footer">
+				<button id="submitEdit" type="button" class="btn btn-primary">Submit</button>
+				<button class="btn" data-dismiss="modal">Close</button>
+				<div id="missingValuesError" class="hidden" style="text-align:left; margin-top:12px;">
+					<div class="alert alert-danger fade in">
+						<p><strong>Error!</strong> Some values are missing.</p> 
+						<p>Enter all values before submitting the form.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    var editExperimentModalViewModel = new Maps.EditExperimentModalViewModel();
+</script>

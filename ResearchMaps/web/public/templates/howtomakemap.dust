@@ -1,0 +1,170 @@
+{>"htmlHeader"/}
+{>"navbar"/}
+<link rel="stylesheet" type="text/css" href="/css/stacks_page_page4.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="/js/mainNavbar"></script>
+
+<!-- Main Content Area -->
+		<div class="row inset">
+			<div id="content" class="large-8 columns">
+				
+
+<!-- Stacks v1035 --><div id='stacks_out_107_page4' class='stacks_top'><div id='stacks_in_107_page4' class=''><div id='stacks_out_5_page4' class='stacks_out'><div id='stacks_in_5_page4' class='stacks_in stack_stack'><div id='stacks_out_7_page4' class='stacks_out'><div id='stacks_in_7_page4' class='stacks_in com_yourhead_stack_header_stack'>
+<h3>How to make a map</h3>
+</div></div>
+<div id='stacks_out_9_page4' class='stacks_out'><div id='stacks_in_9_page4' class='stacks_in stack_stack'><div id='stacks_out_13_page4' class='stacks_out'><div id='stacks_in_13_page4' class='stacks_in text_stack'>
+<br />
+All of the concepts below are defined in the 
+<a href="/glossary" rel="self" title="Glossary">Glossary</a>. 
+	<!--and explained in the -->
+<!--<a href="/videos" rel="self" title="Videos">Videos</a>.-->
+<br />
+<br />
+1. <strong>Click </strong><strong>
+<a href="#" data-toggle="modal" data-target="#makeMap" rel="self" title="Make a map">Make a Map</a></strong>.
+<br />
+<br />
+2. <strong>Import a PubMed citation using the "Search PubMed and create an entry" field</strong>. 
+To find a paper that is indexed by PubMed, enter the PubMed ID (e.g., 24431436). If instead you would like to make a private map of unpublished work, please use the "Create a Private Entry" fields. 
+Private maps will not be shared with other users. Only maps created using the "Search PubMed and create an entry" fields will be shared.
+<br />
+<br />
+3. <strong>Choose whether the connection you wish to enter is Empirical or Hypothetical.</strong> 
+An Empirical connection reflects the results of an actual experiment, while a Hypothetical connection represents a theoretical result. 
+Hypothetical connections can be a means of keeping track of important causal ideas related to the experiments being mapped, and they can also be useful in organizing the results of a map. 
+<br />
+<br />
+4. <strong>Enter information about the entities in your experiment in the "What," "Where," and "When" fields. </strong> 
+These items are defined in the 
+<a href="/glossary" rel="self" title="Glossary">Glossary</a>. 
+<!--We also encourage you to watch our short -->
+<!--<a href="/videos" rel="self" title="Videos">Videos</a>. -->
+Roughly speaking, the Agent and Target are the entities manipulated/observed and measured in an experiment testing the relation between these entities (Agent → Target).
+<br />
+<br />
+5. <strong>Enter the type of experiment; currently, there are four choices: a positive manipulation of the agent (↑), a negative manipulation of the agent (↓), and two types of non-intervention experiments (∅<sup>↑</sup>, ∅<sup>↓</sup>)</strong>. 
+In positive and negative manipulation experiments, the agent is manipulated, resulting in increased and decreased levels, respectively. In non-intervention experiments, the agent is not manipulated, and its values are simply followed over time. 
+Non-intervention experiments include experiments where the agent is seen to increase in value or probability (∅<sup>↑</sup>), and experiments where the agent is seen to decrease in value or probability (∅<sup>↓</sup>).
+<br />
+<br />
+6. <strong>Enter a few descriptive words about the approach/technique/method</strong> used to manipulate the Agent in the "Agent Approach" field. 
+It is important to be both succinct and precise.
+<br />
+<br />
+7. <strong>If your experiment includes a second Agent, click "Add second Agent for double-intervention experiment," and enter the same type of information for this second Agent</strong>. 
+Currently, ResearchMaps supports double-Agent experiments in which both Agents undergo an intervention.
+<br />
+<br />
+8. <strong>Enter information about the Target in the "What," "Where," and "When" fields.</strong> 
+Again, these items are defined in the 
+<a href="/glossary" rel="self" title="Glossary">Glossary</a>.
+<br />
+<br />
+9. <strong>Enter information about the type of result of your experiment. Currently, there are three choices</strong>: 
+"Increase (+)," for when the Target is observed to increase in value or probability, 
+"Decrease (&minus;)," for when the Target is observed to decrease in value or probability, 
+and "No Change (0)," for when no change is observed in the Target. 
+Please note that in double-intervention experiments (two Agents involved instead of one) this field will have two more choices: 
+a double-up arrow (↑↑) when the Target is observed to increase in value or probability more so than in the experiment with just one Agent (if available), 
+and a double-down arrow (↓↓) when the Target is observed to decrease in value or probability more so than in the experiment with just one Agent (if available).
+<br />
+<br />
+10. <strong>Enter a few words about the approach/technique/method</strong> used to measure the change (or lack of change) in the Target in the "Target Approach" field.
+<br />
+<br />
+11. <strong>(Optional) In the corresponding fields, enter the statistical test, p-value, and/or fold change associated with the experiment.</strong>
+<br />
+<br />
+12. <strong>After all of the fields are filled in, click "Submit."</strong> 
+A map of the experiment you just entered, along with the others that you have entered for the same article or project, 
+will appear in the panel on the right.
+<br />
+<br />
+You can right-click on any edge (including its score and arrowhead) in the map to reveal a table with the experiments that contributed to that edge. 
+In this table, you will be able to edit, duplicate, or delete an experiment. 
+Tip: When entering multiple experiments that share many of the same elements, it is easiest to duplicate an existing experiment and then edit it. 
+Please make sure that the data entered are correct and that the score of each edge makes sense to you. 
+<br />
+<br />
+You can also double-click on any edge in the map to retrieve PubMed citations that are relevant to the Agent–Target relation represented by that edge.
+<br />
+<br />
+For more information on these subjects, you can go to the 
+<a href="/glossary" rel="self" title="Glossary">Glossary</a>. 
+	<!--and -->
+<!--<a href="/videos" rel="self" title="Videos">Videos.</a> -->
+If you find something amiss anywhere in this process, please 
+<a href="/contact" rel="self" title="Contact Us">send us a comment</a>. 
+Your ideas, requests, feedback, and comments are critical for improving this tool!
+<br />
+<br />
+<br />
+<br />
+</div></div></div></div></div></div><div id='stacks_out_103_page4' class='stacks_out'><div id='stacks_in_103_page4' class='stacks_in stack_stack'><div id='stacks_out_114_page4' class='stacks_out'><div id='stacks_in_114_page4' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent3"><div id='stacks_out_136_page4' class='stacks_out'><div id='stacks_in_136_page4' class='stacks_in text_stack'><span id='stacks_in_137_page4'>Two additional resources to help you learn about ResearchMaps:<br /><br /></span></div></div><div id='stacks_out_121_page4' class='stacks_out'><div id='stacks_in_121_page4' class='stacks_in columns_stack'><div class='stacks_div stacks_left'>
+<div id='stacks_out_126_page4' class='stacks_out'><div id='stacks_in_126_page4' class='stacks_in image_stack'><div class='centered_image' >
+
+<a href="http://www.amazon.com/books/dp/0199731756" rel="external"><img class='imageStyle' src='images/stacks_image_127.png' width='158' height='240' alt='Stacks Image 127' /></a></div></div></div>
+</div>
+<div class='stacks_div stacks_right'>
+<div id='stacks_out_128_page4' class='stacks_out'><div id='stacks_in_128_page4' class='stacks_in image_stack'><div class='centered_image' >
+
+<a href="http://www.silvalab.com/silvapapers/S2Neuron2013.pdf" rel="external"><img class='imageStyle' src='images/stacks_image_129.png' width='202' height='264' alt='Stacks Image 129' /></a></div></div></div>
+</div></div></div><div id='stacks_out_105_page4' class='stacks_out'><div id='stacks_in_105_page4' class='stacks_in text_stack'>Need more help? 
+
+<a href="/contact" rel="self" title="Contact Us">Contact Us</a>! We would love to help!</div></div></div></div></div></div></div><div id='stacks_out_119_page4' class='stacks_out'><div id='stacks_in_119_page4' class='stacks_in info_extracontent_extracontent_stack'><div id="myExtraContent5"><div id='stacks_out_134_page4' class='stacks_out'><div id='stacks_in_134_page4' class='stacks_in stack_stack'><div class='slice empty out'><div class='slice empty in'></div></div></div></div></div></div></div></div></div>
+
+
+
+<!-- End of Stacks Content -->
+
+
+
+			</div>  <!-- #content -->
+
+			
+<aside id="sidebar" class="large-4 columns">
+				<h4 class="sidebar_title"></h4>
+				<div class="sidebar_content"></div>
+				<div id="archives">
+					
+				</div>
+			</aside>  <!-- #sidebar -->
+
+			<div class="clearer"></div>
+		</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+	<aside id="sidebar" class="large-4 columns">
+		<h4 class="sidebar_title"></h4>
+		<div class="sidebar_content"></div>
+		<div id="archives">
+					
+		</div>
+	</aside>  <!-- #sidebar -->
+
+	<div class="clearer"></div>
+</div>
+
+		<!-- ExtraContent Area Three -->
+		<div class="ec_wrapper" id="extraContent3">
+			<div class="row inset">
+				<div class="large-12 columns">
+					<div id="extraContainer3"></div>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+</html>
+{>"footer" /}

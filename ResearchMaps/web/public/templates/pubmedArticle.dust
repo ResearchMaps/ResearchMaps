@@ -1,0 +1,6 @@
+<div class="pubmedArticle">
+	<p class="articleTitle">{title}</p>
+	<p class="articleAuthor">{authors}</p>
+	<p class="articleJournal">{journal}</p>
+	<p>PMID: {PMID} </p>
+</div>

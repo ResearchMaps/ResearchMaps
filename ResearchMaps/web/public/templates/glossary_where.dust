@@ -1,0 +1,1 @@
+Specifies the location of an entity relative to appropriate landmarks. This could be a cell type, a brain region, etc. This information must be filled in since this is critical to define the entity being mapped.

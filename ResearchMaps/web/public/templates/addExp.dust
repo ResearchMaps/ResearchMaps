@@ -1,0 +1,184 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title" style="font-size: 130%; margin-bottom: 0; color: white; letter-spacing: normal;">
+			Add Experiment
+		</h3>
+	</div>
+	<div class="panel-body">
+		<!-- <button type="button" id="addDesc" class="btn btn-primary">Add Description</button> -->
+		<form id="addExperiment" class="form" action="/paper/{uuid}/experiment" method="POST">
+				<!-- Empirical/Hypothetical radio buttons for main experiment entry form -->
+				<div class="form-group">
+                	<ul class="list-inline">
+                		<li><label class="radio"><input id="empirical" type="radio" name="empiricalHypothetical" checked="checked"> Empirical </label></li>
+                		<li><label class="radio"><input id="hypothetical" type="radio" name="empiricalHypothetical"> Hypothetical </label></li>
+                	</ul>
+                </div>
+				<div class="alternateRow">
+					{>"addAgent" /}
+				</div>
+
+				<!--div class="secondAgent alternateRow"></div-->
+				<div id="SecondAgentDiv" class="hide alternateRow">
+					<label>Second Agent</label>
+					<div class="form-group">
+						<label for="WhatSecondAgent">What</label>
+						<div>
+							<input id="whatsecondagent" class="autocomplete form-control formInput secAgent optional" type="text" name="WhatSecondAgent" placeholder="Required" value="{WhatSecondAgent}">
+						</div>
+					</div>
+					<div class="form-group hide descOptional">
+						<label for="WhatSecondAgentDesc">What Description</label>
+						<div>
+							<input id="whatsecondagentDesc" class="form-control formInput optional" type="text" name="WhatSecondAgentDesc" placeholder="Required" value="{WhatSecondAgentDesc}">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="WhereSecondAgent">Where</label>
+						<div>
+							<input id="wheresecondagent" class="form-control formInput secAgent optional" type="text" name="WhereSecondAgent" placeholder="Required" value="{WhereSecondAgent}">
+						</div>
+					</div>
+					<div class="form-group hide descOptional">
+						<label for="WhereSecondAgentDesc">Where Description</label>
+						<div>
+							<input id="wheresecondagentDesc" class="form-control formInput optional" type="text" name="WhereSecondAgentDesc" placeholder="Required" value="{WhereSecondAgentDesc}">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="WhenSecondAgent">When</label>
+						<div>
+							<input id="whensecondagent" class="form-control formInput secAgent optional" type="text" name="WhenSecondAgent" placeholder="Required" value="{WhenSecondAgent}">
+						</div>
+					</div>
+					<div class="form-group hide descOptional">
+						<label for="WhenSecondAgentDesc">When Description</label>
+						<div>
+							<input id="whensecondagentDesc" class="form-control formInput optional" type="text" name="WhenSecondAgentDesc" placeholder="Required" value="{WhenSecondAgentDesc}">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="SecondManipulation">Second Manipulation</label>
+						<div>
+							<ul class="list-inline">
+								<li><label class="radio"><input type="radio" name="SecondManipulation" value="Positive"> &#8593;</label></li>
+								<li><label class="radio"><input type="radio" name="SecondManipulation" value="Negative"> &#8595;</label></li>
+								<!-- <li><label class="radio"><input type="radio" name="SecondManipulation" value="NIP"> &#8709;&#8593;</label></li> -->
+								<!-- <li><label class="radio"><input type="radio" name="SecondManipulation" value="NIN"> &#8709;&#8595;</label></li> -->
+							</ul>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="SecondAgentApproach">Second Agent Approach</label>
+						<div>
+							<input type="text" id="SecondAgentApproach" class="form-control formInput secAgent optional" name="SecondAgentApproach" placeholder="Required" value="{SecondAgentApproach}">
+						</div>
+					</div>
+					<a href="#" id="removeSecondAgent">Remove Second Agent</a>
+				</div>
+				<br>
+				<div class="alternateRow">
+					<label title="In experiments testing an A -> B connection, A is the Agent and B is the Target; For example, experiments that change A (the Agent) would be expected to consequently change B (the Target).">Target</label>
+					<div class="form-group">
+						<label for="WhatTarget" title="This designation helps to define an entity (Agent or Target). For example, the name of a gene (e.g., CREB1) or protein (e.g., alphaCaMKII), physiology (e.g., long-term potentiation), behavior (e.g., spatial learning), etc. This information must be filled in since it is critical to define the entity being mapped.">What</label>
+						<div>
+							<input id="whattarget" class="autocomplete form-control formInput" type="text" name="WhatTarget" placeholder="Required" value="{WhatTarget}">
+						</div>
+					</div>
+					
+					<div class="form-group hide descOptional">
+						<label for="WhatTargetDesc">Target What Description</label>
+						<div>
+							<input id="whattargetDesc" class="form-control formInput optional" type="text" name="WhatTargetDesc" placeholder="Required" value="{WhatTargetDesc}">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="WhereTarget" title="Specifies the location of an entity relative to appropriate landmarks. This could be a cell type, a brain region, etc. This information must be filled in since this is critical to define the entity being mapped.">Where</label>
+						<div>
+							<input id="wheretarget" class="form-control formInput" type="text" name="WhereTarget" placeholder="Required" value="{WhereTarget}">
+						</div>
+					</div>
+
+					<div class="form-group hide descOptional">
+						<label for="WhereTargetDesc">Target Where Description</label>
+						<div>
+							<input id="wheretargetDesc" class="form-control formInput optional" type="text" name="wheretargetDesc" placeholder="Required" value="{WhereTargetDesc}">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="WhenTarget" title="Defines a timeline relevant to the properties of a given entity, such as the developmental stage in which an entity was studied (e.g., post-natal day 2, 18 months old mouse, etc.). This information must be filled in since this is critical to define the entity being mapped.">When</label>
+						<div>
+							<input id="whentarget" class="form-control formInput" type="text" name="WhenTarget" placeholder="Required" value="{WhenTarget}">
+						</div>
+					</div>
+
+					<div class="form-group hide descOptional">
+						<label for="WhenTargetDesc">Target When Description</label>
+						<div>
+							<input id="whentargetDesc" class="form-control formInput optional" type="text" name="whentargetDesc" placeholder="Required" value="{WhenTargetDesc}">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="Result" title="This field is used to record the change in the Target recorded during the experiment. An upward arrow is used to record increases in the Target, a downwards arrow records decreases and “No Change” is chosen when the target does not change during the experiment. For double-intervention experiments, the Results field has two additional choices: if the result of the double manipulation experiment is more pronounced than the change in the single manipulation experiment, than the user should choose either the double up (increases in the target) or down (decreases in the target) arrows. This information must be filled in since this is critical to define the entity being mapped.">Result</label>
+						<div class="Result">
+							<label class="radio-inline"><input type="radio" name="Result" value="Increase"> Increase (+)</label><br>
+							<label class="radio-inline"><input type="radio" name="Result" value="No Change"> No Change (0)</label><br>
+							<label class="radio-inline"><input type="radio" name="Result" value="Decrease"> Decrease (&minus;)</label>
+						</div>
+					</div>
+
+					<!--div class="form-group hide descOptional">
+						<label for="resultDesc">Result Description</label>
+						<div>
+							<input id="resultDesc" class="form-control formInput" type="text" name="resultDesc" placeholder="Required" value="{ResultDesc}">
+						</div>
+					</div-->
+
+					<div class="form-group">
+						<label for="TargetApproach">Target Approach</label>
+						<div>
+							<input id="TargetApproach" type="text" class="form-control formInput" name="TargetApproach" placeholder="Required" value="{TargetApproach}">
+						</div>
+						<input id="_csrf" type="hidden" name="_csrf" value="{_csrf}">
+					</div>
+				</div>
+			<!--p><a href="#" id="showContextFields">Show context fields</a></p>
+			<div id="contextDiv"></div-->
+			<div class="form-group">
+				<label for="StatTest">Statistical Test</label>
+				<div>
+					<input id="StatTest" class="form-control formInput optional" type="text" name="StatTest" placeholder="Optional" value="{StatTest}">
+				</div>
+				<label for="pvalue">p-value</label>
+				<div>
+					<input id="pvalue" class="form-control formInput optional" type="text" name="pvalue" placeholder="Optional" value="{pvalue}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="foldChange">Fold Change</label>
+				<div>
+					<input id="foldChange" class="form-control formInput optional" type="text" name="foldChange" placeholder="Optional" value="{foldChange}">
+				</div>
+			</div>
+			<p title="In this type of experiment there are at least two simultaneous manipulations of two separate Agents, and the effects are measured on a common Target. The goal of these experiments is to test whether one of the agents mediated the effects between the other agent and the target in an “A to B to C”, where A and B are the two manipulated agents and C is the target."><a href="#" id="addAgent">Add second Agent for double-intervention experiment</a></p>
+
+			<input type="submit" id='addExpSubmit' class="btn btn-primary" name="submit"/>
+			<button type="button" id="addExpClear" class="btn btn-default">Clear</button>
+		</form>
+	</div>
+</div>
+
+<script>
+	$(".panel-primary").children().click(function() {
+		$('#banner').slideUp(700);
+		$('#content_divider_line').slideUp(700);
+	});
+	$(".panel-default").children().click(function() {
+		$('#banner').slideUp(700);
+		$('#content_divider_line').slideUp(700);
+	});
+</script>

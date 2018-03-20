@@ -1,0 +1,16 @@
+<div class="mapTarget">
+	<span>Target</span>
+	<br>
+	<label for="destinationWhat">What</label>
+	<div class="form-group">
+		<input type="text" id="destinationWhat" class="form-control autocomplete" placeholder="Required">
+	</div>
+	<label for="destinationWhere">Where</label>
+	<div class="form-group">
+		<input type="text" id="destinationWhere" class="form-control" placeholder="Optional">
+	</div>
+	<label for="destinationWhen">When</label>
+	<div class="form-group">
+		<input type="text" id="destinationWhen" class="form-control" placeholder="Optional">
+	</div>
+</div>

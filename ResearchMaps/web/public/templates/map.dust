@@ -1,0 +1,124 @@
+{>"htmlHeader" /}
+<body>
+
+{>"navbar" /}
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" data-main="../js/mainMap"></script>
+
+<!--
+<div class="row inset">
+        <div id="content" class="large-8 columns">
+<div id='stacks_out_107_page1' class='stacks_top'><div id='stacks_in_107_page1' class=''><div id='stacks_out_5_page1' class='stacks_out'><div id='stacks_in_5_page1' class='stacks_in stack_stack'><div id='stacks_out_9_page1' class='stacks_out'><div id='stacks_in_9_page1' class='stacks_in stack_stack'><div id='stacks_out_13_page1' class='stacks_out'><div id='stacks_in_13_page1' class='stacks_in text_stack'>
+-->
+<!--
+<div class="container padTop page-header">
+<div class="row">
+-->
+	<div class="container-fluid">
+		<div class="row-fluid page-header">
+			<h3 id="global-map-header-title" class="addMargin"> <strong>Global Map</strong></h3>
+		</div>
+		<div class="row-fluid fullHeight" id="divGlobalBody">
+			<div id="missingTargetError" class="alert alert-danger alert-dismissable hidden">
+                <button type="button" data-hide="alert" class="close" aria-hidden="true">&times;</button>
+                <strong>Error</strong>: When searching for an agent-target pair, you must enter both an agent and a target. Otherwise, click "Search for a single entity."
+            </div>
+			<div class="col-sm-3 fullHeight">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title" style="font-size: 130%; margin-bottom: 0; color: white; letter-spacing: normal;">
+							Search Global Map
+						</h3>
+					</div>
+					<form id="agent-target-either" class="panel-body hidden">
+                        <input type="radio" name="search-mode" value="agentOnly" /> Agent only<br />
+                        <input type="radio" name="search-mode" value="targetOnly" /> Target only <br />
+                        <input type="radio" name="search-mode" value="either" checked="checked" /> Either <br />
+                    </form>
+					<div id="searchForm" class="panel-body">
+						<span id="single-entity-title" title="{>"glossary_agent_target"/}">Search for a single entity</span>
+                        <span id="agent-form-title" class="hidden" title="{>"glossary_agent_target"/}">Agent</span>
+                        <br>
+						<label for="sourceWhat" title="{>"glossary_what"/}">What</label>
+						<div class="form-group">
+							<input type="text" id="sourceWhat" class="form-control autocomplete" placeholder="Required">
+						</div>
+						<label for="sourceWhere" title="{>"glossary_where"/}">Where</label>
+						<div class="form-group">
+							<input type="text" id="sourceWhere" class="form-control" placeholder="Optional">
+						</div>
+						<label for="sourceWhat" title="{>"glossary_when"/}">When</label>
+						<div class="form-group">
+							<input type="text" id="sourceWhen" class="form-control" placeholder="Optional">
+						</div>
+						<div id="target" class="form-group"></div>
+						<a id="addSubstance" title="{>"glossary_agent_target"/}" style="cursor:pointer">Search for an agent-target pair</a>
+						<a id="removeSecondAgentTarget" class="hidden" title="{>"glossary_agent_target"/}" style="cursor:pointer">Search for a single entity</a>
+						<br>
+						<br>
+						<div class="alignbox">
+                                <label style="margin-bottom:8px"><input type="checkbox" />Search only your maps</label>
+                            </div>
+    						<label>Ignore Where and When</label>
+    						<div class="form-group">
+    								<label class="radio-inline">
+    									<input type="radio" name="coalesce" value="true" checked="checked">Yes
+    								</label>
+    								<label class="radio-inline">
+    									<input type="radio" name="coalesce" value="false">No
+    								</label>
+    					</div>
+						<label title="{>"glossary_score_range"/}">Score Range</label>
+						<div class="form-group">
+							<input type="text" id="minimum" class="form-control" placeholder="Minimum">
+							<input type="text" id="maximum" class="form-control" placeholder="Maximum">
+						</div>
+						<label title="{>"glossary_max_number_of_connections"/}">Max Number of Connections</label>
+						<div class="form-group">
+							<input type="text" id="numConnections" class="form-control" placeholder="Range: 1&ndash;6; Default: 2">
+						</div>
+
+						<div class="form-group">
+							<button type="button" class="btn search btn-primary">Search</button>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="panel panel-primary"> -->
+					<!-- <div class="panel-heading"> -->
+						<!-- <h3 class="panel-title"><font color="#FFFFFF" letter-spacing="2px">Rename Terms</font> </h3> -->
+					<!-- </div> -->
+					<!-- <div id="dRelabel" class="panel-body"> -->
+						<!-- <div id="relabelForm"></div> -->
+						<!-- <button class="btn btn-primary" id="relabel">Relabel</button> -->
+					<!-- </div> -->
+				<!-- </div> -->
+			</div>
+			<div class="col-sm-9 fullHeight">
+				<div class="panel panel-default scroll">
+					<div class="panel-body">
+						<div class="alert alert-danger alert-dismissable hidden">
+							<button id="noMatchFound" type="button" data-hide="alert" class="close" aria-hidden="true">&times;</button>
+							<strong>Error</strong>: No match found. Try changing the parameters of your search.
+						</div>
+
+						<div id="svg" class="text-center svg fullHeight"></div>
+					</div>
+					<div id="experiments"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/js/SVGPan.js"></script>
+	<script>
+		Maps.local(function() {
+			var hackTypesetSuperscripts = new Maps.Hacks.typesetSuperscripts();
+		});
+		$(".panel-primary").children().click(function() {
+			$('#banner').slideUp(700);
+			$('#content_divider_line').slideUp(700);
+		});
+	</script>
+</body>
+</html>
+{>"footer" /}

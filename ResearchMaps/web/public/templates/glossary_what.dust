@@ -1,0 +1,1 @@
+This designation helps to define an entity (Agent or Target). For example, the name of a gene (e.g., CREB1) or protein (e.g., alphaCaMKII), physiology (e.g., long-term potentiation), behavior (e.g., spatial learning), etc. This information must be filled in since it is critical to define the entity being mapped.
