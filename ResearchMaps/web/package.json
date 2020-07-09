@@ -24,7 +24,7 @@
     "nodemailer-mailgun-transport": "*",
     "emailjs": "*",
     "request": "*",
-    "lodash": "~4.14.0",
+    "lodash": "~4.17.19",
     "boom": "~3.2.2"
   }
 }
